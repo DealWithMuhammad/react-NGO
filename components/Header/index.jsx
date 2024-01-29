@@ -12,6 +12,7 @@ import { useDisclosure } from "@mantine/hooks";
 import {
   IconBrandFacebook,
   IconBrandInstagram,
+  IconBrandLinkedin,
   IconPhone,
 } from "@tabler/icons-react";
 import classes from "./HeaderMenu.module.css";
@@ -40,12 +41,12 @@ export default function HeaderMenu() {
         justifyContent="space-between"
         m={0}
         p={0}
-      // textTransform="uppercase"
+        // textTransform="uppercase"
       >
         {/* Social Media Icons */}
         <Flex alignItems="center" px={1}>
           <Link
-            href="https://www.facebook.com/albashirwelfare"
+            href="https://www.facebook.com/ReActMalaysia?mibextid=9R9pXO"
             target="_blank"
             rel="noopener noreferrer"
             _hover={{ textDecoration: "none" }}
@@ -53,7 +54,7 @@ export default function HeaderMenu() {
             <IconBrandFacebook size={20} color="#3b5998" />
           </Link>
           <Link
-            href="https://www.instagram.com/albashirwelfare/?hl=en"
+            href="https://www.instagram.com/react.malaysia?igshid=MzRlODBiNWFlZA%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             ml="1rem"
@@ -66,7 +67,7 @@ export default function HeaderMenu() {
             />
           </Link>
           <Link
-            href="mailto:baigassociates@gmail.com"
+            href="https://www.linkedin.com/company/refugee-action-for-change/"
             ml="1rem"
             style={{
               color: "#0b090a",
@@ -76,15 +77,15 @@ export default function HeaderMenu() {
               fontSize: ".8rem",
             }}
           >
-            <MailOutlineRoundedIcon
+            <IconBrandLinkedin
               style={{
                 color: "#0b090a",
                 fontSize: "21px",
                 marginRight: "1rem",
               }}
-              color="#fff"
+              color="#3b5998"
             />
-            baigassociates@gmail.com
+            reactmalaysia@gmail.com
           </Link>
         </Flex>
 
@@ -101,11 +102,11 @@ export default function HeaderMenu() {
           <IconPhone size={22} style={{ padding: "2px" }} color="#0b090a" />
           {/* Uncomment the following lines if you want to add a phone link */}
           <Link
-            href="tel:+92 333 5593694"
+            href="tel:+60 113986 5270"
             style={{ color: "#0b090a", fontSize: ".7rem" }}
             ml="0.5rem"
           >
-            +92 333 5593694
+            +60 113986 5270
           </Link>
         </Flex>
       </Flex>
@@ -177,7 +178,7 @@ export default function HeaderMenu() {
         </ScrollArea>
         <Divider my="sm" />
       </Drawer>
-      <Flex
+      {/* <Flex
         alignItems="center"
         justifyContent={"center"}
         p={1}
@@ -189,9 +190,9 @@ export default function HeaderMenu() {
           _hover={{ textDecoration: "none" }}
           style={{ fontWeight: "900", color: "#000" }}
         >
-          Start Construction Now
+          Welcome to React
         </Link>
-      </Flex>
+      </Flex> */}
     </Box>
   );
 }
