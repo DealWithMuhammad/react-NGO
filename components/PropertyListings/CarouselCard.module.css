@@ -1,0 +1,25 @@
+.wrapper {
+  padding-top: var(--mantine-spacing-md);
+  padding-bottom: calc(var(--mantine-spacing-xl) * 2);
+  margin: auto;
+  width: 100vw;
+}
+
+.price {
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+}
+
+.carouselControls {
+  transition: opacity 150ms ease;
+  opacity: 0;
+}
+
+.carouselIndicator {
+  width: rem(4px);
+  height: rem(4px);
+  transition: width 250ms ease;
+}
+
+.carouselIndicator[data-active] {
+  width: rem(16px);
+}

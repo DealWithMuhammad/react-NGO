@@ -1,0 +1,49 @@
+{
+  "name": "baig-associates",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "host": "vercel --prod",
+    "modules": "yarn",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mantine/carousel": "^7.3.2",
+    "@mantine/core": "^7.3.2",
+    "@mantine/hooks": "^7.3.2",
+    "@mui/icons-material": "^5.15.2",
+    "@mui/material": "^5.15.2",
+    "@nextui-org/react": "^2.2.9",
+    "@tabler/icons-react": "^2.44.0",
+    "embla-carousel-react": "^8.0.0-rc17",
+    "firebase": "^10.7.1",
+    "framer-motion": "^10.16.16",
+    "next": "14.0.4",
+    "next-video": "^0.11.1",
+    "react": "^18",
+    "react-awesome-slider": "^4.1.0",
+    "react-dom": "^18",
+    "react-icons": "^4.12.0",
+    "react-quill": "^2.0.0",
+    "react-text-transition": "^3.1.0",
+    "swiper": "^11.0.5"
+  },
+  "devDependencies": {
+    "@types/node": "20.10.6",
+    "@types/react": "18.2.46",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4",
+    "postcss": "^8.4.32",
+    "postcss-preset-mantine": "^1.12.2",
+    "postcss-simple-vars": "^7.0.1",
+    "tailwindcss": "^3.3.0",
+    "typescript": "5.3.3"
+  }
+}
