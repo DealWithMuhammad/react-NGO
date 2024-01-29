@@ -14,10 +14,10 @@ export default function Home() {
   return (
     <main>
       <section className="relative">
-        <HeroVideo />
-        <div className="absolute z-99 top-0">
-          <Hero />
-        </div>
+        {/* <HeroVideo /> */}
+        {/* <div className="absolute z-99 top-0"> */}
+        <Hero />
+        {/* </div> */}
       </section>
       <PropertyListings all={false} />
       <Testimonial />

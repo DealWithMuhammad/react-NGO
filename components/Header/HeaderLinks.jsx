@@ -1,12 +1,12 @@
 const navLinks = [
   { href: "/", label: "Home" },
-  { href: "/Construction", label: "Construction" },
-  { href: "/Projects", label: "Projects" },
-  { href: "/Services", label: "Services" },
-  { href: "/Map", label: "Map" },
+  { href: "/AboutUs", label: "About" },
+  { href: "/Projects", label: "Activites" },
+  // { href: "/Services", label: "Services" },
+  // { href: "/Map", label: "Map" },
   { href: "/Blogs", label: " News & Blogs" },
-  { href: "/ContactUs", label: "Talk To Us" },
-  { href: "/AboutUs", label: "About Us" },
+  { href: "/ContactUs", label: "Contact" },
+  // { href: "/Construction", label: "Cons" },
 ];
 
 export default navLinks;
