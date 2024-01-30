@@ -22,8 +22,8 @@ export default function Home() {
       <PropertyListings all={false} />
       {/* <Testimonial /> */}
       {/* <SAM /> */}
-      <Blog all={false} />
       <Services />
+      <Blog all={false} />
       <FunFact />
       <FAQ />
       {/* <FeaturesTab /> */}
