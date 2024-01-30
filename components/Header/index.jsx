@@ -166,10 +166,16 @@ export default function HeaderMenu() {
         onClose={closeDrawer}
         size="100%"
         padding="md"
-        title="ALBASHIR"
         hiddenFrom="sm"
         zIndex={1000000}
       >
+        <Image
+          className="realtive bottom-10"
+          width={100}
+          height={100}
+          src="/logo.png"
+          alt="Logo"
+        />
         <ScrollArea h={`calc(90vh - ${rem(80)})`} mx="-md">
           <Divider my="sm" />
 

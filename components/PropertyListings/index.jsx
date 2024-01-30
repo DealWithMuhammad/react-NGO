@@ -31,7 +31,7 @@ export default function CarouselCard({ all }) {
     all === true ? propertiesData : propertiesData.slice(0, 3);
 
   return (
-    <section id="features" className="py-20 lg:py-25 xl:py-30">
+    <section id="features" className="py-10 ">
       <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
         {/* <!-- Section Title Start --> */}
         <SectionHeader
@@ -44,10 +44,10 @@ export default function CarouselCard({ all }) {
         />
         <p className="h-14 ml-6">...</p>
 
-        <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+        <div className="space-y-6 mx-10 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
           <div className="md:5/12 lg:w-5/12">
             <Image
-              src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png"
+              src="/team.jpg"
               alt="image"
               loading="lazy"
               width=""
@@ -56,21 +56,19 @@ export default function CarouselCard({ all }) {
           </div>
           <div className="md:7/12 lg:w-6/12">
             <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
-              ABOUT ReAct ORGANIZATION
+              Advocating for Rights in Malaysia
             </h2>
             <p className="mt-6 text-gray-600">
-              BAIG ASSOCIATES is a leading design, construction, development,
-              and real estate management (sales and marketing) firm exclusively
-              operating in DHA Islamabad. Based in Islamabad, Pakistan, we
-              specialize in providing unparalleled commercial projects and
-              designer villas to our customers in the Twin Cities. Our focus is
-              on delivering properties that seamlessly blend comfort, style, and
-              functionality. With a commitment to excellence, we offer
-              nationwide services encompassing top-tier architectural services
-              and plans, interior designs, commercial designs, and cutting-edge
-              construction. At BAIG ASSOCIATES, we channel our ideas and
-              resources to craft masterpieces, turning your dream residential
-              and commercial projects into reality.
+              Refugee Action for Change (ReAct) is a refugee-led advocacy group
+              in Malaysia. Established in June 2019,to unify refugee leaders and
+              representatives from different nationalities and ethnicities to
+              advocate for the recognition of refugee rights in Malaysia as a
+              refugee-led effort.
+            </p>
+            <p className="mt-6 text-gray-600">
+              ReAct also works to empower the community as advocates by
+              providing relevant capacity building training and awareness
+              activities.
             </p>
           </div>
         </div>
