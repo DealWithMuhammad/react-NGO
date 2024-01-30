@@ -2,13 +2,13 @@
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC0Qr4ju37Gj5BpxVto8PMOoeIdRK3R51g",
-  authDomain: "baig-associates.firebaseapp.com",
-  projectId: "baig-associates",
-  storageBucket: "baig-associates.appspot.com",
-  messagingSenderId: "1035532685495",
-  appId: "1:1035532685495:web:9fc0edb18c3e78d21ebd32",
-  measurementId: "G-XN7C54641F",
+  apiKey: "AIzaSyBqRTkZ3gCslH4eStIsLoObIQAn6jrIbEs",
+  authDomain: "reactmalaysia-6b2a1.firebaseapp.com",
+  projectId: "reactmalaysia-6b2a1",
+  storageBucket: "reactmalaysia-6b2a1.appspot.com",
+  messagingSenderId: "864760495911",
+  appId: "1:864760495911:web:66f65f4ac87b2fe0a3b302",
+  measurementId: "G-26FK2151C8",
 };
 
 export const app = initializeApp(firebaseConfig);
