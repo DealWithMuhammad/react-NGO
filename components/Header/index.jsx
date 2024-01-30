@@ -122,7 +122,7 @@ export default function HeaderMenu() {
               style={{
                 zIndex: 999,
                 position: "absolute",
-                top: 11,
+                top: 15,
                 width: "auto",
                 height: "7rem",
                 filter: "brightness(0) invert(1) grayscale(1)",
@@ -136,6 +136,7 @@ export default function HeaderMenu() {
               justifyContent: "center",
               alignItems: "center",
             }}
+            className="relative bottom-3.5"
           >
             <Burger
               opened={drawerOpened}
