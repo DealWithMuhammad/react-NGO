@@ -13,10 +13,10 @@ const Index = () => {
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: "Our Services",
-              subtitle: "Building Your Dream Space, from Vision to Reality",
+              title: "Objectives",
+              subtitle: "Our Objectives in Advocacy and Empowerment",
               description:
-                "We offer a comprehensive range of architectural and construction services to bring your ideas to life.",
+                "lorem ipsum ciwhcuwdwdhwdwdqskoqsqn  jscnsjkcnqjkcn",
             }}
           />
           {/* <!-- Section Title End --> */}

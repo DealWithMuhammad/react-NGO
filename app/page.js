@@ -20,8 +20,8 @@ export default function Home() {
         {/* </div> */}
       </section>
       <PropertyListings all={false} />
-      <Testimonial />
-      <SAM />
+      {/* <Testimonial /> */}
+      {/* <SAM /> */}
       <Blog all={false} />
       <Services />
       <FunFact />

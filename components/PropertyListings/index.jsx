@@ -9,10 +9,11 @@ import { useEffect, useState } from "react";
 import { getBlogs } from "api/functions/get";
 import { Flex } from "@chakra-ui/react";
 import { Spinner } from "@nextui-org/react";
+import { Image } from "@chakra-ui/react";
 
 export default function CarouselCard({ all }) {
   const [propertiesData, setPropertiesData] = useState([]);
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -20,15 +21,14 @@ export default function CarouselCard({ all }) {
       setPropertiesData(
         fetchedBlogData.filter((blog) => blog.category === "PROJECTS")
       );
-      setLoading(false)
+      setLoading(false);
     };
 
     fetchData();
   }, [all]);
 
-  const slicedPropertiesData = all
-    === true ? propertiesData :
-    propertiesData.slice(0, 3)
+  const slicedPropertiesData =
+    all === true ? propertiesData : propertiesData.slice(0, 3);
 
   return (
     <section id="features" className="py-20 lg:py-25 xl:py-30">
@@ -36,14 +36,45 @@ export default function CarouselCard({ all }) {
         {/* <!-- Section Title Start --> */}
         <SectionHeader
           headerInfo={{
-            title: "Explore Our Services",
-            subtitle: "Turning Your Vision into Reality",
+            title: "Foreword",
+            subtitle: "Introduction to ReAct",
             description:
-              "Discover a wide array of reliable architectural and construction services aimed at transforming your concepts into tangible, quality-built spaces.",
+              "ReAct: Empowering Refugees, Advocating for Change in Malaysia.",
           }}
         />
         <p className="h-14 ml-6">...</p>
-        {loading ? ( // Show loader if loading is true
+
+        <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
+          <div className="md:5/12 lg:w-5/12">
+            <Image
+              src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png"
+              alt="image"
+              loading="lazy"
+              width=""
+              height=""
+            />
+          </div>
+          <div className="md:7/12 lg:w-6/12">
+            <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
+              ABOUT ReAct ORGANIZATION
+            </h2>
+            <p className="mt-6 text-gray-600">
+              BAIG ASSOCIATES is a leading design, construction, development,
+              and real estate management (sales and marketing) firm exclusively
+              operating in DHA Islamabad. Based in Islamabad, Pakistan, we
+              specialize in providing unparalleled commercial projects and
+              designer villas to our customers in the Twin Cities. Our focus is
+              on delivering properties that seamlessly blend comfort, style, and
+              functionality. With a commitment to excellence, we offer
+              nationwide services encompassing top-tier architectural services
+              and plans, interior designs, commercial designs, and cutting-edge
+              construction. At BAIG ASSOCIATES, we channel our ideas and
+              resources to craft masterpieces, turning your dream residential
+              and commercial projects into reality.
+            </p>
+          </div>
+        </div>
+        {/* {loading ? ( // Show loader if loading is true
           <Flex height="20vh" align="center" justify="center">
             <Spinner size="xl" color="default" />
           </Flex>
@@ -53,9 +84,9 @@ export default function CarouselCard({ all }) {
               return <SingleListing key={index} item={item} />;
             })}
           </SimpleGrid>
-        )}
+        )} */}
         {/* Hide the "Know More" button if 'all' is false */}
-        {all === false && <KnowMore link={"Projects"} />}
+        {/* {all === false && <KnowMore link={"Projects"} />} */}
       </div>
     </section>
   );

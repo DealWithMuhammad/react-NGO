@@ -115,15 +115,16 @@ export default function HeaderMenu() {
           <Link href="/" style={{ width: "12rem" }}>
             <Image
               src="/logo.png"
-              width={700}
-              height={700}
+              width={150}
+              height={150}
               alt="logo"
+              className="filter brightness-0 grayscale-100"
               style={{
                 zIndex: 999,
                 position: "absolute",
-                top: 30,
+                top: 11,
                 width: "auto",
-                height: "5rem",
+                height: "7rem",
                 filter: "brightness(0) invert(1) grayscale(1)",
               }}
             />
@@ -140,15 +141,16 @@ export default function HeaderMenu() {
               opened={drawerOpened}
               onClick={toggleDrawer}
               hiddenFrom="sm"
-              color={"#fff"}
+              color={"#000000"}
             />
           </div>
+          {/* nav links */}
           <Group h="100%" gap={0} visibleFrom="sm">
             {navLinks.map((link, index) => (
               <Link
                 key={index}
                 href={link.href}
-                style={{ color: "#edf6f9" }}
+                style={{ color: "#000000", fontSize: "16px" }}
                 className={classes.link}
               >
                 {link.label}

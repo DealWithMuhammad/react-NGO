@@ -14,7 +14,7 @@ export default function page() {
         headerInfo={{
           title: "INFORMATION REGARDING THE COMPANY",
           subtitle: "ABOUT THE ORGANIZATION",
-          description: "DETAILS ABOUT THE COMPANY",
+          description: "DETAILS ABOUT THE ReAct",
         }}
       />
       <div className="py-16 ">
@@ -31,7 +31,7 @@ export default function page() {
             </div>
             <div className="md:7/12 lg:w-6/12">
               <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
-                ABOUT BAIG ASSOCIATES
+                ABOUT ReAct ORGANIZATION
               </h2>
               <p className="mt-6 text-gray-600">
                 BAIG ASSOCIATES is a leading design, construction, development,
@@ -55,9 +55,9 @@ export default function page() {
             </h2>
             <p className="mt-6 text-gray-600">
               BAIG ASSOCIATES was the brainchild of Chairman Muhammad Rehan Baig
-              whose idea was later materialized by CEO Muhammad Rehan Baig. Despite
-              having a successful career in Engineering, the CEO set out to
-              realize his vision of creating designer villas, residential
+              whose idea was later materialized by CEO Muhammad Rehan Baig.
+              Despite having a successful career in Engineering, the CEO set out
+              to realize his vision of creating designer villas, residential
               projects and commercial projects. The company focuses on catering
               to the needs of its customers by creating artistic designs.
               Therefore, BAIG ASSOCIATES is the only development company that
@@ -100,9 +100,9 @@ export default function page() {
               ourselves as a one-stop solution for all construction, design, and
               development-related services. We aim to establish our selling and
               development wings, which would cover more ground and accommodate
-              the needs and wishes of our customers better than ever before. BAIG
-              ASSOCIATES is a pioneering design, construction, development and
-              real estate management (sales and marketing) company based in
+              the needs and wishes of our customers better than ever before.
+              BAIG ASSOCIATES is a pioneering design, construction, development
+              and real estate management (sales and marketing) company based in
               Islamabad, Pakistan. BAIG ASSOCIATES, as a major development
               company provides its customers in the Twin cities with exquisite
               commercial projects and designer villas that combine comfort,

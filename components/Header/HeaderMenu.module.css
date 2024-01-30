@@ -2,11 +2,14 @@
   height: rem(70px);
   padding-left: var(--mantine-spacing-md);
   padding-right: var(--mantine-spacing-md);
-  border-bottom: rem(0px) solid
+  border-top: rem(3px) solid
     light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
-  background-color: #0c0c0c;
+    border-bottom: rem(3px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  background-color: #edf6f9;
   /* background-image: url("/images/header/inspiration-geometry.png"); */
   background-size: contain;
+  color: #000000;
+  
 }
 
 .link {
@@ -37,7 +40,7 @@
   padding-left: var(--mantine-spacing-md);
   padding-right: var(--mantine-spacing-md);
   text-decoration: none;
-  color: #fff;
+  color: #000000;
   font-weight: 500;
   font-size: var(--mantine-font-size-sm);
 

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
 import SectionHeader from "../Common/SectionHeader";
@@ -9,7 +9,7 @@ import { Flex } from "@chakra-ui/react";
 import { Spinner } from "@nextui-org/react";
 
 const Blog = ({ all, selectedCategory }) => {
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
   const [blogData, setBlogData] = useState([]);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const Blog = ({ all, selectedCategory }) => {
       const fetchedBlogData = await getBlogs();
       setBlogData(fetchedBlogData);
     };
-    setLoading(false)
+    setLoading(false);
     fetchData();
   }, [all]);
 
@@ -25,9 +25,7 @@ const Blog = ({ all, selectedCategory }) => {
     (blog) => blog.category === selectedCategory
   );
 
-  const sliceBlogData = all
-    ? filteredBlogData :
-    blogData.slice(0, 3)
+  const sliceBlogData = all ? filteredBlogData : blogData.slice(0, 3);
 
   return (
     <section className="py-20 lg:py-25 xl:py-30">
@@ -42,7 +40,7 @@ const Blog = ({ all, selectedCategory }) => {
           />
         </div>
       </div>
-
+      {/* 
       <div className="mx-auto mt-15 max-w-c-1280 px-4 md:px-8 xl:mt-20 xl:px-0">
         {loading ? ( // Show loader if loading is true
           <Flex height="20vh" align="center" justify="center">
@@ -56,7 +54,7 @@ const Blog = ({ all, selectedCategory }) => {
           </div>
         )}
         {!all && <KnowMore link={"/Blogs"} />}
-      </div>
+      </div> */}
     </section>
   );
 };

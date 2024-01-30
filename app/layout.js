@@ -6,8 +6,8 @@ import Footer from "components/Footer";
 import Lines from "components/Lines";
 
 export const metadata = {
-  title: "Baig Associates",
-  description: "Under Development Of Rafay Khan",
+  title: "ReAct Malaysia",
+  description: "Under Development Of Muhammad Ahmad",
 };
 
 export default function RootLayout({ children }) {
