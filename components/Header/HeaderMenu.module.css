@@ -2,10 +2,11 @@
   height: rem(70px);
   padding-left: var(--mantine-spacing-md);
   padding-right: var(--mantine-spacing-md);
-  border-top: rem(3px) solid
+  border-top: rem(1px) solid
     light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
-    border-bottom: rem(3px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
-  background-color: #edf6f9;
+    /* border-bottom: rem(3px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4)); */
+  background-color: #fff;
+  /* background-color: #efefe9; */
   /* background-image: url("/images/header/inspiration-geometry.png"); */
   background-size: contain;
   color: #000000;

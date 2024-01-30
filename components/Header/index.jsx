@@ -36,7 +36,7 @@ export default function HeaderMenu() {
   return (
     <Box style={{ overflow: "hidden", position: "relative" }}>
       <Flex
-        bg="#edf6f9"
+        bg="#efefe9"
         alignItems="center"
         justifyContent="space-between"
         m={0}
@@ -94,7 +94,6 @@ export default function HeaderMenu() {
           alignItems="center"
           px={1}
           style={{
-            backgroundColor: "#83c5be",
             height: "2rem",
             borderBottomLeftRadius: 15,
           }}
@@ -122,7 +121,7 @@ export default function HeaderMenu() {
               style={{
                 zIndex: 999,
                 position: "absolute",
-                top: 15,
+                top: 13,
                 width: "auto",
                 height: "7rem",
                 filter: "brightness(0) invert(1) grayscale(1)",
