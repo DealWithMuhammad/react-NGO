@@ -12,7 +12,7 @@ import HeroVideo from "components/HeroVideo";
 
 export default function Home() {
   return (
-    <main>
+    <main className="backdrop-blur-sm">
       <section className="relative">
         {/* <HeroVideo /> */}
         {/* <div className="absolute z-99 top-0"> */}

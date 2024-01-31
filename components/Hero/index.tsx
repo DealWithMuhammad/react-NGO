@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { Heading } from "@chakra-ui/react";
 import TextTransition, { presets } from "react-text-transition";
 
 const Hero = () => {
@@ -55,9 +56,13 @@ const Hero = () => {
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className=" md:w-2/3  p-8 rounded-lg">
-              <h4 className="mb-4.5 text-md font-medium text-white">
+              <Heading
+                fontSize={{ base: "xs", md: "md" }}
+                fontWeight={500}
+                className="mb-4.5 text-white"
+              >
                 {heroContent.title}
-              </h4>
+              </Heading>
               <h1 className="mb-5 pr-16 text-3xl font-bold text-white xl:text-hero ">
                 {heroContent.subtitle}
               </h1>

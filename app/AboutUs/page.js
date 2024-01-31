@@ -13,7 +13,7 @@ export default function page() {
       <SectionHeader
         headerInfo={{
           title: "INFORMATION REGARDING ReAct",
-          subtitle: "ABOUT THE ReAct",
+          subtitle: "About the ReAct",
           description: "DETAILS ABOUT THE ReAct",
         }}
       />
