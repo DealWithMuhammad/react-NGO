@@ -36,6 +36,9 @@ const BlogItem = ({ blog }: { blog: Blog }) => {
             <Link href={`/Blogs/${id}`}>{`${title.slice(0, 50)}...`}</Link>
           </h3>
           <p className="line-clamp-3">{metadata}</p>
+          <Link className="text-blue-500 underline" href={`/Blogs/${id}`}>
+            Read More
+          </Link>
         </div>
       </motion.div>
     </>

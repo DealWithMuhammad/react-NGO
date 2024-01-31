@@ -28,20 +28,20 @@ const Blog = ({ all, selectedCategory }) => {
   const sliceBlogData = all ? filteredBlogData : blogData.slice(0, 3);
 
   return (
-    <section className="py-20 lg:py-25 xl:py-30">
+    <section className="py-10 mx-10 ">
       <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
         <div className="animate_top mx-auto text-center">
           <SectionHeader
             headerInfo={{
               title: `NEWS & BLOGS`,
               subtitle: `Latest News & Blogs`,
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`,
+              description: `Explore ReAct's impactful journey and stay updated on refugee rights advocacy and community empowerment through our News and Blogs section.`,
             }}
           />
         </div>
       </div>
 
-      <div className="mx-auto mt-15 max-w-c-1280 px-4 md:px-8 xl:mt-20 xl:px-0">
+      <div className="mx-auto mt-8 max-w-c-1280 px-4 md:px-8 xl:mt-8 ">
         {loading ? ( // Show loader if loading is true
           <Flex height="20vh" align="center" justify="center">
             <Spinner size="xl" color="default" />
@@ -54,7 +54,6 @@ const Blog = ({ all, selectedCategory }) => {
               ))}
           </div>
         )}
-        {!all && <KnowMore link={"/Blogs"} />}
       </div>
     </section>
   );

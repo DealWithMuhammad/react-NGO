@@ -15,7 +15,7 @@ export default function Page() {
     <>
       <section className="w-screen flex flex-col justify-center overflow-hidden backdrop-blur-sm ">
         <br />
-        <Blog all={true} selectedCategory={selectedCategory} />
+        <Blog all={false} />
       </section>
     </>
   );
