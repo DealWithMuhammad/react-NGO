@@ -40,7 +40,7 @@ const Blog = ({ all, selectedCategory }) => {
           />
         </div>
       </div>
-      {/* 
+
       <div className="mx-auto mt-15 max-w-c-1280 px-4 md:px-8 xl:mt-20 xl:px-0">
         {loading ? ( // Show loader if loading is true
           <Flex height="20vh" align="center" justify="center">
@@ -48,13 +48,14 @@ const Blog = ({ all, selectedCategory }) => {
           </Flex>
         ) : (
           <div className="grid grid-cols-1 gap-7.5 md:grid-cols-2 lg:grid-cols-3 xl:gap-10">
-            {sliceBlogData && sliceBlogData.map((blog, key) => (
-              <BlogItem blog={blog} key={key} />
-            ))}
+            {sliceBlogData &&
+              sliceBlogData.map((blog, key) => (
+                <BlogItem blog={blog} key={key} />
+              ))}
           </div>
         )}
         {!all && <KnowMore link={"/Blogs"} />}
-      </div> */}
+      </div>
     </section>
   );
 };

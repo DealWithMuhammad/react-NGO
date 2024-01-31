@@ -5,24 +5,24 @@ export default function page() {
   return (
     <section className="backdrop-blur-sm">
       <Image
-        src="https://img.freepik.com/free-photo/group-diverse-people-having-business-meeting_53876-25060.jpg?w=740&t=st=1704925030~exp=1704925630~hmac=7e2115f546b29d8f3e193307225e4a022514902ab65af24fc9a7ecf647199b1e"
+        src="/test.jpg"
         alt="About Us"
         height={300}
         className="w-screen object-cover mb-3"
       />
       <SectionHeader
         headerInfo={{
-          title: "INFORMATION REGARDING THE COMPANY",
-          subtitle: "ABOUT THE ORGANIZATION",
+          title: "INFORMATION REGARDING ReAct",
+          subtitle: "ABOUT THE ReAct",
           description: "DETAILS ABOUT THE ReAct",
         }}
       />
-      <div className="py-16 ">
+      <div className="py-16 mx-10 ">
         <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
           <div className="space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
             <div className="md:5/12 lg:w-5/12">
               <Image
-                src="https://tailus.io/sources/blocks/left-image/preview/images/startup.png"
+                src="/about.jpg"
                 alt="image"
                 loading="lazy"
                 width=""
@@ -49,7 +49,7 @@ export default function page() {
               </p>
             </div>
           </div>
-          <div>
+          <div className="mt-10">
             <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
               COMPANY OVERVIEW
             </h2>
@@ -87,7 +87,7 @@ export default function page() {
               through the legitimate process with compliance with laws, rules
               and regulations for safe and fair dealings.
             </p>
-            <h2 className="text-2xl text-gray-900 font-bold md:text-4xl">
+            <h2 className="text-2xl mt-10 text-gray-900 font-bold md:text-4xl">
               VISION AND MISSION
             </h2>
             <p className="mt-6 text-gray-600">

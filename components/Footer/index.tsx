@@ -55,7 +55,7 @@ const Footer = () => {
                   href="#"
                   className="font-medium text-black dark:text-white text-xl"
                 >
-                  baigassociates@gmail.com
+                  reactmalaysia@gmail.com
                 </Link>
               </motion.div>
 
