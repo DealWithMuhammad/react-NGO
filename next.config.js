@@ -2,14 +2,22 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  // images: {
+  //   domains: [
+  //     "images.unsplash.com",
+  //     "cdn.pixabay.com",
+  //     "images.pexel.com",
+  //     "img.freepik.com",
+  //     "drive.google.com",
+  //     "localhost",
+  //   ],
+  // },
   images: {
-    domains: [
-      "images.unsplash.com",
-      "cdn.pixabay.com",
-      "images.pexel.com",
-      "img.freepik.com",
-      "localhost",
-      "scontent.fkul16-1.fna.fbcdn.net",
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+      },
     ],
   },
 };
