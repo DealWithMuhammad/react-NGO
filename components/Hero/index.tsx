@@ -46,7 +46,7 @@ const Hero = () => {
   return (
     <>
       <section
-        className="bg-cover flex items-center bg-center bg-no-repeat bg-fixed h-[440px] lg:h-[580px] w-full text-white tracking-wider relative"
+        className="bg-cover flex items-center bg-center  h-[440px] lg:h-[580px] w-full text-white tracking-wider relative"
         style={{
           backgroundImage:
             "linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/hero.jpg')",
