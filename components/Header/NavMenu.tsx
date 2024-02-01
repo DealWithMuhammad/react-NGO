@@ -28,7 +28,14 @@ export const NavMenu = () => {
 
   return (
     <>
-      <Button ref={btnRef} onClick={onOpen}>
+      <Button
+        bg={"#f8cf2c"}
+        ref={btnRef}
+        border={"1px"}
+        onClick={onOpen}
+        borderColor={"#f8cf2c"}
+        _hover={{ bg: "transparent" }}
+      >
         <VscListFlat />
       </Button>
       <Drawer
@@ -59,8 +66,9 @@ export const NavMenu = () => {
             {navLinks.map((link, index) => (
               <Link key={index} href={link.href} className={classes.link}>
                 <Box
-                  p="0.5rem"
-                  _hover={{ bgColor: "brand.primaryLight", color: "yellow" }}
+                  width={"100%"}
+                  p={"10px"}
+                  _hover={{ bgColor: "#f8cf2c", color: "black" }}
                 >
                   {link.label}
                 </Box>
