@@ -88,7 +88,7 @@ const Contribute: React.FC = () => {
 
   // Render the component
   return (
-    <Box mx={0}>
+    <Box mx={10}>
       <Flex
         w={{ base: "100%", lg: "90%" }}
         mx="auto"
@@ -97,7 +97,7 @@ const Contribute: React.FC = () => {
         data-aos="fade-up"
       >
         {/* ... your existing JSX code */}
-        <Box w={{ base: "100%", lg: "45%" }}>
+        <Box mx={"auto"} w={{ base: "100%", lg: "45%" }}>
           <Heading pl="12x" size="2xl">
             Let's collaborate
           </Heading>
