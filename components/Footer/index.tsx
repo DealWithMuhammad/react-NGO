@@ -99,20 +99,13 @@ const Footer = () => {
                         Projects
                       </Link>
                     </li>
-                    <li>
-                      <Link
-                        href="/Properties"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Properties
-                      </Link>
-                    </li>
+
                     <li>
                       <Link
                         href="/Construction"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Construction
+                        Activites
                       </Link>
                     </li>
                   </ul>
@@ -141,14 +134,6 @@ const Footer = () => {
                   </h4>
 
                   <ul>
-                    <li>
-                      <Link
-                        href="/Map"
-                        className="mb-3 inline-block hover:text-primary"
-                      >
-                        Map
-                      </Link>
-                    </li>
                     <li>
                       <Link
                         href="/Blogs"
@@ -265,11 +250,6 @@ const Footer = () => {
               <ul className="flex items-center gap-8">
                 <li>
                   <Link href="#" className="hover:text-primary">
-                    English
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-primary">
                     Privacy Policy
                   </Link>
                 </li>
@@ -300,7 +280,7 @@ const Footer = () => {
               className="animate_top"
             >
               <p>
-                &copy; {new Date().getFullYear()} Solid. All rights reserved
+                &copy; {new Date().getFullYear()} ReAct. All rights reserved
               </p>
             </motion.div>
 

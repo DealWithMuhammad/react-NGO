@@ -7,6 +7,8 @@ import FunFact from "components/FunFact";
 import SAM from "components/SAM";
 import FAQ from "components/FAQ";
 import Blog from "components/Blog";
+import Contribute from "components/Contribute";
+import Members from "components/Members";
 import Testimonial from "components/Testimonial";
 import HeroVideo from "components/HeroVideo";
 
@@ -24,8 +26,10 @@ export default function Home() {
       {/* <SAM /> */}
       <Services />
       <FunFact />
+      <Members />
       <Blog all={false} />
       <FAQ />
+      <Contribute />
       {/* <FeaturesTab /> */}
       {/* <Integration /> */}
       {/* <About /> */}
