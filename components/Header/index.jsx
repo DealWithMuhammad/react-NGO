@@ -22,6 +22,7 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
 import navLinks from "./HeaderLinks";
+import { NavMenu } from "./NavMenu";
 
 export default function HeaderMenu() {
   const nav = useRouter();
@@ -130,19 +131,20 @@ export default function HeaderMenu() {
           </Link>
 
           <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-            className="relative bottom-3.5"
+            // style={{
+            //   display: "flex",
+            //   justifyContent: "center",
+            //   alignItems: "center",
+            // }}
+            className="relative  bottom-3.5 md:hidden"
           >
-            <Burger
+            <NavMenu />
+            {/* <Burger
               opened={drawerOpened}
               onClick={toggleDrawer}
               hiddenFrom="sm"
               color={"#000000"}
-            />
+            /> */}
           </div>
           {/* nav links */}
           <Group h="100%" gap={0} visibleFrom="sm">
@@ -160,7 +162,8 @@ export default function HeaderMenu() {
         </Group>
       </header>
 
-      <Drawer
+      {/* opening of drawer */}
+      {/* <Drawer
         opened={drawerOpened}
         onClose={closeDrawer}
         size="100%"
@@ -185,7 +188,10 @@ export default function HeaderMenu() {
           ))}
         </ScrollArea>
         <Divider my="sm" />
-      </Drawer>
+      </Drawer> */}
+
+      {/* end of opening of drawer */}
+
       {/* <Flex
         alignItems="center"
         justifyContent={"center"}
