@@ -5,7 +5,7 @@ import { Link } from "@chakra-ui/react";
 const Footer = () => {
   return (
     <>
-      <footer className="border-t border-stroke bg-white dark:border-strokedark dark:bg-blacksection">
+      <footer className="border-t border-stroke text-white bg-[#272727]">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           {/* <!-- Footer Top --> */}
           <div className="py-20 lg:py-25">
@@ -46,7 +46,7 @@ const Footer = () => {
                 </p>
                 <Link
                   href="#"
-                  className="font-medium text-[#252827] dark:text-white text-xl"
+                  className="font-medium text[#fff] dark:text-white text-xl"
                 >
                   reactmalaysia@gmail.com
                 </Link>
@@ -71,7 +71,7 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-[#252827] dark:text-white">
+                  <h4 className="mb-9 text-itemtitle2 font-medium text[#fff] dark:text-white">
                     Quick Links
                   </h4>
 
@@ -122,7 +122,7 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-[#252827] dark:text-white">
+                  <h4 className="mb-9 text-itemtitle2 font-medium text[#fff] dark:text-white">
                     Support
                   </h4>
 
@@ -172,7 +172,7 @@ const Footer = () => {
                   viewport={{ once: true }}
                   className="animate_top"
                 >
-                  <h4 className="mb-9 text-itemtitle2 font-medium text-[#252827] dark:text-white">
+                  <h4 className="mb-9 text-itemtitle2 font-medium text-[#fff] ">
                     Newsletter
                   </h4>
                   <p className="mb-4 w-[90%]">
@@ -192,7 +192,7 @@ const Footer = () => {
                         className="absolute right-0 p-4"
                       >
                         <svg
-                          className="fill-[#757693] hover:fill-primary dark:fill-white"
+                          className="fill-[#f8cf2c] transition ease-in hover:fill-[#000] "
                           width="20"
                           height="20"
                           viewBox="0 0 20 20"
