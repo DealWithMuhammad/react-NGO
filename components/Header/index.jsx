@@ -16,7 +16,7 @@ import {
   IconPhone,
 } from "@tabler/icons-react";
 import classes from "./HeaderMenu.module.css";
-import Link from "next/link";
+import { Link } from "@chakra-ui/react";
 import { Flex } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
 import { Image } from "@chakra-ui/react";
@@ -148,7 +148,9 @@ export default function HeaderMenu() {
                 key={index}
                 href={link.href}
                 style={{ color: "#000000", fontSize: "16px" }}
-                className={classes.link}
+                className={
+                  "flex items-center h-full px-4 text-black font-medium text-sm hover:text-red-500"
+                }
               >
                 {link.label}
               </Link>
