@@ -37,9 +37,9 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
       >
         {/* <div className="relative flex h-16 w-16 items-center justify-center rounded-[4px] bg-black"> */}
         {/* <Image src={icon} width={36} height={36} alt="title" /> */}
-        <h1 className="text-white">{id}</h1>
+        {/* <h1 className="text-white">{id}</h1> */}
         {/* </div> */}
-        <h3 className="mb-5 mt-7.5 text-xl font-semibold text-[#f8cf2c] dark:text-white xl:text-itemtitle">
+        <h3 className="mb-5 mt-7.5 text-xl md:text-xl font-semibold text-[#f8cf2c] dark:text-white ">
           <span className="font-bold text-[#000]">{id}:</span> {title}
         </h3>
         <p>{truncateText(description, 350)}</p>

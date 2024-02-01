@@ -21,7 +21,7 @@ const featuresData: Feature[] = [
     icon: "/images/icon/icon-02.svg",
     title: "RIGHTS ADVOCACY",
     description:
-      "Facilitate refugee engagement in advocating for their rights and protection.",
+      "Empower refugees to advocate for their rights and protection through facilitated engagement.",
     subtitle:
       "No matter where you are in the world. Distance is no hurdle for us  Let us handle the intricacies while you enjoy the convenience of a digital partnership. ",
   },
@@ -33,7 +33,7 @@ const featuresData: Feature[] = [
     icon: "/images/icon/icon-03.svg",
     title: "COLLABORATIVE SUPPORT",
     description:
-      "Foster collaboration among refugee groups and community based organizations to collectively support refugee rights.",
+      "Catalyze refugee groups and organizations to collaborate, supporting collective efforts for refugee rights.",
     subtitle:
       "Our Construction services redefine the boundaries of creativity and precision. Recognizing the need for personalization in residential projects and the scale of demands in commercial ventures, we blend essential elements of perfect construction. With an unwavering commitment to utilizing available resources for perfect proportions and sweeping angles.",
   },
@@ -45,7 +45,7 @@ const featuresData: Feature[] = [
     icon: "/images/icon/icon-04.svg",
     title: "POLICY ADVOCACY",
     description:
-      "Advocate for policy and legal changes to ensure refugees in Malaysia have access to jobs, education, and affordable healthcare.",
+      "Advocate for policy changes to secure jobs, education, and healthcare access for refugees in Malaysia.",
     subtitle:
       "Discover a world of artistic brilliance with our Residential Architecture services. Our expert architects transform spaces into personalized sanctuaries mirroring modern living standards. Architectural plans are visionary expressions of lifestyle, mood, and behavior. Serving clients globally, our commitment to creating sustainable environments is unwavering. Immerse yourself in a journey where architecture meets individuality.",
   },
@@ -57,7 +57,7 @@ const featuresData: Feature[] = [
     icon: "/images/icon/icon-05.svg",
     title: "STRATEGIC INITIATIVES",
     description:
-      "Strategically plan and execute initiatives to improve refugee rights and safety.",
+      "Plan and implement strategic initiatives for enhanced refugee rights and safety outcomes.",
     subtitle:
       "No matter where you are in the world. Distance is no hurdle for us  Let us handle the intricacies while you enjoy the convenience of a digital partnership. ",
   },
