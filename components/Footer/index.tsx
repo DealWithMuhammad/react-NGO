@@ -1,8 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
-
+import { Link } from "@chakra-ui/react";
 const Footer = () => {
   return (
     <>
