@@ -37,7 +37,7 @@ export default function HeaderMenu() {
   return (
     <Box style={{ overflow: "hidden", position: "relative" }}>
       <Flex
-        bg="#efefe9"
+        bg="#252827"
         alignItems="center"
         justifyContent="space-between"
         m={0}
@@ -52,7 +52,7 @@ export default function HeaderMenu() {
             rel="noopener noreferrer"
             _hover={{ textDecoration: "none" }}
           >
-            <IconBrandFacebook size={20} color="#3b5998" />
+            <IconBrandFacebook size={20} color="#fff" />
           </Link>
           <Link
             href="https://www.instagram.com/react.malaysia?igshid=MzRlODBiNWFlZA%3D%3D"
@@ -64,14 +64,14 @@ export default function HeaderMenu() {
             <IconBrandInstagram
               size={25}
               style={{ padding: "2px" }}
-              color="#e4405f"
+              color="#fff"
             />
           </Link>
           <Link
             href="https://www.linkedin.com/company/refugee-action-for-change/"
             ml="1rem"
             style={{
-              color: "#0b090a",
+              color: "#fff",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -80,11 +80,11 @@ export default function HeaderMenu() {
           >
             <IconBrandLinkedin
               style={{
-                color: "#0b090a",
+                color: "#fff",
                 fontSize: "21px",
                 marginRight: "1rem",
               }}
-              color="#3b5998"
+              color="#fff"
             />
             reactmalaysia@gmail.com
           </Link>
@@ -98,12 +98,13 @@ export default function HeaderMenu() {
             height: "2rem",
             borderBottomLeftRadius: 15,
           }}
+          bg="#f8cf2c"
         >
-          <IconPhone size={22} style={{ padding: "2px" }} color="#0b090a" />
+          <IconPhone size={22} style={{ padding: "2px" }} color="#000" />
           {/* Uncomment the following lines if you want to add a phone link */}
           <Link
             href="tel:+60 113986 5270"
-            style={{ color: "#0b090a", fontSize: ".7rem" }}
+            style={{ color: "#000", fontSize: ".7rem" }}
             ml="0.5rem"
           >
             +60 113986 5270

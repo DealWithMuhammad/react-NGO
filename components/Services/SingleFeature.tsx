@@ -39,13 +39,13 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
         {/* <Image src={icon} width={36} height={36} alt="title" /> */}
         <h1 className="text-white">{id}</h1>
         {/* </div> */}
-        <h3 className="mb-5 mt-7.5 text-xl font-semibold text-black dark:text-white xl:text-itemtitle">
-          <span className="font-bold">{id}:</span> {title}
+        <h3 className="mb-5 mt-7.5 text-xl font-semibold text-[#f8cf2c] dark:text-white xl:text-itemtitle">
+          <span className="font-bold text-[#000]">{id}:</span> {title}
         </h3>
         <p>{truncateText(description, 350)}</p>
         <Link href={href}>
-          <Button className="mt-6" bg={"#000"}>
-            Learn More
+          <Button color="#f8cf2c" className="mt-6">
+            <span className="text-black">Learn More</span>
           </Button>
         </Link>
       </motion.div>
