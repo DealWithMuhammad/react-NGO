@@ -19,7 +19,7 @@ import classes from "./HeaderMenu.module.css";
 import Link from "next/link";
 import { Flex } from "@chakra-ui/react";
 import { useRouter } from "next/navigation";
-import Image from "next/image";
+import { Image } from "@chakra-ui/react";
 import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
 import navLinks from "./HeaderLinks";
 import { NavMenu } from "./NavMenu";
@@ -114,21 +114,15 @@ export default function HeaderMenu() {
       <header className={classes.header}>
         <Group justify="space-between" h="100%">
           <Link href="/" style={{ width: "12rem" }}>
-            <Image
-              src="/logo.png"
-              width={150}
-              height={150}
-              alt="logo"
-              className="filter brightness-0 grayscale-100"
-              style={{
-                zIndex: 999,
-                position: "absolute",
-                top: 13,
-                width: "auto",
-                height: "7rem",
-                filter: "brightness(0) invert(1) grayscale(1)",
-              }}
-            />
+            <div className="relative">
+              <Image
+                className="absolute bottom-[-60px] md:bottom-[-72px]"
+                src="/logo.png"
+                width={"140px"}
+                height="140px"
+                alt="logo"
+              />
+            </div>
           </Link>
 
           <div
