@@ -280,7 +280,8 @@ const Footer = () => {
               className="animate_top"
             >
               <p>
-                &copy; {new Date().getFullYear()} ReAct. All rights reserved
+                &copy; {new Date().getFullYear()} ReAct. All rights reserved by
+                Muhammad Ahmad
               </p>
             </motion.div>
 
