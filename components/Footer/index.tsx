@@ -5,7 +5,7 @@ import { Link } from "@chakra-ui/react";
 const Footer = () => {
   return (
     <>
-      <footer className="border-t border-stroke text-white bg-[#272727]">
+      <footer className="border-t mt-12 border-stroke text-white bg-[#272727]">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           {/* <!-- Footer Top --> */}
           <div className="py-20 lg:py-25">
