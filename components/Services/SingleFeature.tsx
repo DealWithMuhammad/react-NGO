@@ -45,7 +45,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
         <p>{truncateText(description, 350)}</p>
         <Link href={href}>
           <Button color="#f8cf2c" className="mt-6">
-            <span className="text-black">Learn More</span>
+            <span className="text-[#252827]">Learn More</span>
           </Button>
         </Link>
       </motion.div>

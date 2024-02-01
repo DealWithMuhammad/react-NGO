@@ -23,8 +23,8 @@ export default function Home() {
       {/* <Testimonial /> */}
       {/* <SAM /> */}
       <Services />
-      <Blog all={false} />
       <FunFact />
+      <Blog all={false} />
       <FAQ />
       {/* <FeaturesTab /> */}
       {/* <Integration /> */}

@@ -7,15 +7,15 @@ const FunFact = () => {
   return (
     <>
       {/* <!-- ===== Funfact Start ===== --> */}
-      <section className="px-4 py-20 md:px-8 lg:py-22.5 2xl:px-0">
-        <div className="relative z-1 mx-auto max-w-c-1390 rounded-lg bg-gradient-to-t from-[#F8F9FF] to-[#DEE7FF] py-22.5 dark:bg-blacksection dark:bg-gradient-to-t dark:from-transparent dark:to-transparent dark:stroke-strokedark xl:py-27.5">
-          <Image
+      <section className="py-20 lg:py-22.5 2xl:px-0">
+        <div className="relative z-1 max-w-c-1390 rounded-lg bg-gradient-to-t from-[#fffffd] to-[#f8cf2c] py-22.5 dark:bg-blacksection dark:bg-gradient-to-t dark:from-transparent dark:to-transparent dark:stroke-strokedark xl:py-27.5">
+          {/* <Image
             width={335}
             height={384}
             src="/images/shape/shape-04.png"
             alt="Man"
             className="absolute -left-15 -top-25 -z-1 lg:left-0"
-          />
+          /> */}
           <Image
             width={132}
             height={132}
@@ -23,18 +23,12 @@ const FunFact = () => {
             alt="Doodle"
             className="absolute bottom-0 right-0 -z-1"
           />
-
           <Image
-            fill
-            src="/images/shape/shape-dotted-light-02.svg"
-            alt="Dotted"
-            className="absolute left-0 top-0 -z-1 dark:hidden"
-          />
-          <Image
-            fill
-            src="/images/shape/shape-dotted-dark-02.svg"
-            alt="Dotted"
-            className="absolute left-0 top-0 -z-1 hidden dark:block"
+            width={132}
+            height={132}
+            src="/images/shape/shape-05.png"
+            alt="Doodle"
+            className="absolute bottom-0 left-0 transform rotate-45 -z-1"
           />
 
           <motion.div
@@ -55,13 +49,22 @@ const FunFact = () => {
             viewport={{ once: true }}
             className="animate_top mx-auto mb-12.5 px-4 text-center md:w-4/5 md:px-0 lg:mb-17.5 lg:w-2/3 xl:w-1/2"
           >
-            <h2 className="mb-4 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
-              Trusted by Global Companies.
+            <h2 className="mb-4 text-3xl font-bold text-[#252827] dark:text-white xl:text-sectiontitle3">
+              Mission
             </h2>
             <p className="mx-auto lg:w-11/12">
-              The time to act is now. Trusted by global leaders, we can help you
-              make your mark on the world. Start your project today and claim
-              your place in the future.
+              To advocate for the realisation of refugee rights in Malaysia,
+              specifically in their right to work, right to education and right
+              to healthcare.
+            </p>
+            <h2 className="mb-4 mt-10 text-3xl font-bold text-[#252827] dark:text-white xl:text-sectiontitle3">
+              Vision
+            </h2>
+            <p className="mx-auto lg:w-11/12">
+              The legal recognition of all refugees in Malaysia; and their right
+              to employment, right to accessible education and right to
+              affordable and quality healthcare, regardless of their age,
+              gender, nationality, ethnicity and religion.
             </p>
           </motion.div>
 
@@ -84,7 +87,7 @@ const FunFact = () => {
               viewport={{ once: true }}
               className="animate_top text-center"
             >
-              <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
+              <h3 className="mb-2.5 text-3xl font-bold text-[#252827] dark:text-white xl:text-sectiontitle3">
                 500K
               </h3>
               <p className="text-lg lg:text-para2">World Wide Clients</p>
@@ -107,7 +110,7 @@ const FunFact = () => {
               viewport={{ once: true }}
               className="animate_top text-center"
             >
-              <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
+              <h3 className="mb-2.5 text-3xl font-bold text-[#252827] dark:text-white xl:text-sectiontitle3">
                 1M+
               </h3>
               <p className="text-lg lg:text-para2">Downloads</p>
@@ -130,7 +133,7 @@ const FunFact = () => {
               viewport={{ once: true }}
               className="animate_top text-center"
             >
-              <h3 className="mb-2.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
+              <h3 className="mb-2.5 text-3xl font-bold text-[#252827] dark:text-white xl:text-sectiontitle3">
                 362
               </h3>
               <p className="text-lg lg:text-para2">Winning Award</p>

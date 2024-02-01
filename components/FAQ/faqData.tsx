@@ -3,29 +3,26 @@ import { FAQ } from "types/faq";
 const faqData: FAQ[] = [
   {
     id: 1,
-    quest: "How do you assist in finding or creating my property?",
-    ans: "We listen attentively to your needs, preferences, and budget, guiding you towards properties that perfectly align with your vision. If you can't find an existing property that matches your desires, we collaborate with you to design and create a space that truly reflects your unique style and aspirations.",
+    quest: "What is Refugee Action for Change (ReAct)?",
+    ans: "ReAct is a refugee-led advocacy group based in Malaysia, established in June 2019. It unifies refugee leaders and representatives from various nationalities and ethnicities to advocate for the recognition of refugee rights in Malaysia. The organization also focuses on empowering the refugee community through capacity-building training and awareness activities.",
   },
   {
     id: 2,
-    quest: "What types of properties do you handle?",
-    ans: "We specialize in a diverse range of properties, including residential, commercial, and investment properties. Whether you're looking for a cozy family home, a luxurious penthouse, a vibrant retail space, or a lucrative investment opportunity, we're here to assist you.",
+    quest: "What is the mission of ReAct?",
+    ans: "ReAct's mission is to advocate for the realization of refugee rights in Malaysia, specifically in the areas of the right to work, right to education, and right to healthcare.",
   },
   {
     id: 3,
-    quest: "What are the benefits of working with you?",
-    ans: `We offer a comprehensive range of services, including:
-        - Expert property search and matching
-        - Custom property creation and development
-        - Seamless property management
-        - Access to exclusive properties and listings
-        - Dedicated client support throughout the process
-        - Commitment to exceptional quality and service`,
+    quest: "What is ReAct's vision?",
+    ans: "The vision of ReAct is the legal recognition of all refugees in Malaysia, ensuring their right to employment, accessible education, and affordable and quality healthcare, irrespective of age, gender, nationality, ethnicity, and religion.",
   },
   {
     id: 4,
-    quest: "How can I get started?",
-    ans: "Simply reach out to us through our contact page or give us a call. We'll be delighted to schedule a consultation to discuss your specific needs and kickstart you on your property journey.",
+    quest: "Who are the ReAct coordinators?",
+    ans: `The ReAct coordinators are:
+Dafir from Syria
+Deborah from Somalia
+Nacima from Myanmar`,
   },
 ];
 

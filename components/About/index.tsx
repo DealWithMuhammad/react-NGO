@@ -89,13 +89,13 @@ const About = () => {
               viewport={{ once: true }}
               className="animate_right md:w-1/2"
             >
-              <span className="font-medium uppercase text-black dark:text-white">
+              <span className="font-medium uppercase text-[#252827] dark:text-white">
                 <span className="mb-4 mr-4 inline-flex rounded-full bg-meta px-4.5 py-1 text-metatitle uppercase text-white ">
                   New
                 </span>{" "}
                 {aboutOneContent.title}
               </span>
-              <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
+              <h2 className="relative mb-6 text-3xl font-bold text-[#252827] dark:text-white xl:text-hero">
                 {aboutOneContent.subtitle}{" "}
                 <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">
                   {aboutOneContent.dynamicSubtitle}
@@ -106,12 +106,12 @@ const About = () => {
               {aboutOneContent.features.map((feature, index) => (
                 <div key={index} className="mt-7.5 flex items-center gap-5">
                   <div className="flex h-15 w-15 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
-                    <p className="text-metatitle2 font-semibold text-black dark:text-white">
+                    <p className="text-metatitle2 font-semibold text-[#252827] dark:text-white">
                       {feature.number}
                     </p>
                   </div>
                   <div className="w-3/4">
-                    <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
+                    <h3 className="mb-0.5 text-metatitle2 text-[#252827] dark:text-white">
                       {feature.title}
                     </h3>
                     <p>{feature.description}</p>
@@ -146,10 +146,10 @@ const About = () => {
               viewport={{ once: true }}
               className="animate_left md:w-1/2"
             >
-              <h4 className="font-medium uppercase text-black dark:text-white">
+              <h4 className="font-medium uppercase text-[#252827] dark:text-white">
                 {aboutTwoContent.title}
               </h4>
-              <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
+              <h2 className="relative mb-6 text-3xl font-bold text-[#252827] dark:text-white xl:text-hero">
                 {`Packed with All Essential ${aboutTwoContent.subtitle} `}
                 <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg2 dark:before:bg-titlebgdark">
                   {aboutTwoContent.dynamicSubtitle}
@@ -159,7 +159,7 @@ const About = () => {
               <div>
                 <a
                   href="#"
-                  className="group mt-7.5 inline-flex items-center gap-2.5 text-black hover:text-primary dark:text-white dark:hover:text-primary"
+                  className="group mt-7.5 inline-flex items-center gap-2.5 text-[#252827] hover:text-primary dark:text-white dark:hover:text-primary"
                 >
                   <span className="duration-300 group-hover:pr-2">
                     Know More

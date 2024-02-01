@@ -33,29 +33,29 @@ const Pricing = () => {
           <div className="flex flex-wrap justify-center gap-7.5 lg:flex-nowrap xl:gap-12.5">
             {/* <!-- Pricing Item --> */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
-              <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
+              <h3 className="mb-7.5 text-3xl font-bold text-[#252827] dark:text-white xl:text-sectiontitle3">
                 $10{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
                   /month
                 </span>
               </h3>
-              <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
+              <h4 className="mb-2.5 text-para2 font-medium text-[#252827] dark:text-white">
                 Small Pack
               </h4>
               <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-[#252827] last:mb-0 dark:text-manatee">
                     300 GB Storage
                   </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-[#252827] last:mb-0 dark:text-manatee">
                     Unlimited Photos and Videos
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-[#252827] opacity-40 last:mb-0 dark:text-manatee">
                     Exclusive Support
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-[#252827] opacity-40 last:mb-0 dark:text-manatee">
                     Custom Branding Strategy
                   </li>
                 </ul>
@@ -88,29 +88,29 @@ const Pricing = () => {
                 popular
               </div>
 
-              <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
+              <h3 className="mb-7.5 text-3xl font-bold text-[#252827] dark:text-white xl:text-sectiontitle3">
                 $59{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
                   /month
                 </span>
               </h3>
-              <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
+              <h4 className="mb-2.5 text-para2 font-medium text-[#252827] dark:text-white">
                 Medium Pack
               </h4>
               <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-[#252827] last:mb-0 dark:text-manatee">
                     300 GB Storage
                   </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-[#252827] last:mb-0 dark:text-manatee">
                     Unlimited Photos and Videos
                   </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-[#252827] last:mb-0 dark:text-manatee">
                     Exclusive Support
                   </li>
-                  <li className="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-[#252827] opacity-40 last:mb-0 dark:text-manatee">
                     Custom Branding Strategy
                   </li>
                 </ul>
@@ -139,29 +139,29 @@ const Pricing = () => {
 
             {/* <!-- Pricing Item --> */}
             <div className="animate_top group relative rounded-lg border border-stroke bg-white p-7.5 shadow-solid-10 dark:border-strokedark dark:bg-blacksection dark:shadow-none md:w-[45%] lg:w-1/3 xl:p-12.5">
-              <h3 className="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">
+              <h3 className="mb-7.5 text-3xl font-bold text-[#252827] dark:text-white xl:text-sectiontitle3">
                 $189{" "}
                 <span className="text-regular text-waterloo dark:text-manatee">
                   /month
                 </span>
               </h3>
-              <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
+              <h4 className="mb-2.5 text-para2 font-medium text-[#252827] dark:text-white">
                 Large Pack
               </h4>
               <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
 
               <div className="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
                 <ul>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-[#252827] last:mb-0 dark:text-manatee">
                     300 GB Storage
                   </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-[#252827] last:mb-0 dark:text-manatee">
                     Unlimited Photos and Videos
                   </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-[#252827] last:mb-0 dark:text-manatee">
                     Exclusive Support
                   </li>
-                  <li className="mb-4 text-black last:mb-0 dark:text-manatee">
+                  <li className="mb-4 text-[#252827] last:mb-0 dark:text-manatee">
                     Custom Branding Strategy
                   </li>
                 </ul>
