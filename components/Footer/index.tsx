@@ -28,14 +28,8 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="animate_top w-1/2 lg:w-1/4"
               >
-                <Link href="index.html" className="relative">
-                  <Image
-                    width={150}
-                    height={150}
-                    src="/logo.png"
-                    alt="Logo"
-                    className="filter brightness-0 grayscale-100"
-                  />
+                <Link href="/" className="relative">
+                  <Image width={150} height={150} src="/logo.png" alt="Logo" />
                 </Link>
 
                 <p className="mb-10 mt-5">

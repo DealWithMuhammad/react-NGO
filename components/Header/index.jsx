@@ -37,7 +37,7 @@ export default function HeaderMenu() {
   return (
     <Box style={{ overflow: "hidden", position: "relative" }}>
       <Flex
-        bg="#252827"
+        bg="#000"
         alignItems="center"
         justifyContent="space-between"
         m={0}
@@ -84,7 +84,6 @@ export default function HeaderMenu() {
               }}
               color="#fff"
             />
-            reactmalaysia@gmail.com
           </Link>
         </Flex>
 
@@ -96,7 +95,7 @@ export default function HeaderMenu() {
             height: "2rem",
             borderBottomLeftRadius: 15,
           }}
-          bg="#f8cf2c"
+          bg="#fff"
         >
           <IconPhone size={22} style={{ padding: "2px" }} color="#000" />
           {/* Uncomment the following lines if you want to add a phone link */}
@@ -114,7 +113,7 @@ export default function HeaderMenu() {
           <Link href="/" style={{ width: "12rem" }}>
             <div className="relative">
               <Image
-                className="absolute bottom-[-60px] md:bottom-[-72px]"
+                className="absolute bottom-[-59px] md:bottom-[-66px]"
                 src="/logo.png"
                 width={"140px"}
                 height="140px"
@@ -145,7 +144,7 @@ export default function HeaderMenu() {
               <Link
                 key={index}
                 href={link.href}
-                style={{ color: "#000000", fontSize: "16px" }}
+                style={{ color: "#f8cf2c", fontSize: "16px" }}
                 className={
                   "flex items-center h-full px-4 text-black font-medium text-sm hover:text-red-500"
                 }

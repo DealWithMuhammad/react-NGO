@@ -2,14 +2,14 @@
   height: rem(90px);
   padding-left: var(--mantine-spacing-md);
   padding-right: var(--mantine-spacing-md);
-  border-top: rem(1px) solid
-    light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+  /* border-top: rem(1px) solid
+    light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4)); */
     /* border-bottom: rem(3px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4)); */
-  background-color: #fff;
+  background-color: #272727;
   /* background-color: #efefe9; */
   /* background-image: url("/images/header/inspiration-geometry.png"); */
   background-size: contain;
-  color: #000000;
+  color: #565656;
   padding: 35px 10px;
   
 }
@@ -21,7 +21,7 @@
   padding-left: var(--mantine-spacing-md);
   padding-right: var(--mantine-spacing-md);
   text-decoration: none;
-  color: #000000;
+  color: #565656;
   font-weight: 500;
   font-size: var(--mantine-font-size-sm);
 
@@ -45,7 +45,7 @@
   padding-left: var(--mantine-spacing-md);
   padding-right: var(--mantine-spacing-md);
   text-decoration: none;
-  color: #000000;
+  color: #565656;
   font-weight: 500;
   font-size: var(--mantine-font-size-sm);
 

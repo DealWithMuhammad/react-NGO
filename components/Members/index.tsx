@@ -31,11 +31,6 @@ const Members = ({ all, selectedCategory }) => {
       img: "https://www.wrschool.org/wp-content/uploads/2020/03/Eng.-Reda-Islam.png",
       price: "Board Member",
     },
-    {
-      title: "Ahmed",
-      img: "https://www.wrschool.org/wp-content/uploads/2018/01/Nolan-Bushnell.png",
-      price: "Board Member",
-    },
   ];
 
   return (
