@@ -58,7 +58,6 @@ export default function HeaderMenu() {
             href="https://www.instagram.com/react.malaysia?igshid=MzRlODBiNWFlZA%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
-            ml="1rem"
             _hover={{ textDecoration: "none" }}
           >
             <IconBrandInstagram
@@ -69,7 +68,6 @@ export default function HeaderMenu() {
           </Link>
           <Link
             href="https://www.linkedin.com/company/refugee-action-for-change/"
-            ml="1rem"
             style={{
               color: "#fff",
               display: "flex",
