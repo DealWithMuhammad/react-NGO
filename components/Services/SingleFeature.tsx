@@ -43,8 +43,11 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
           <span className="font-bold text-[#000]">{id}:</span> {title}
         </h3>
         <p>{truncateText(description, 350)}</p>
-        <Link href={href}>
-          <Button color="#f8cf2c" className="mt-6">
+        <Link
+          href={"#"}
+          // href={href}
+        >
+          <Button bg="#f8cf2c" className="mt-6 bg-[#f8cf2c]">
             <span className="text-[#252827]">Learn More</span>
           </Button>
         </Link>
