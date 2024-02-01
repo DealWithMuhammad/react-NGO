@@ -8,7 +8,7 @@ const FunFact = () => {
     <>
       {/* <!-- ===== Funfact Start ===== --> */}
       <section className="py-20 lg:py-22.5 2xl:px-0">
-        <div className="relative z-1 max-w-c-1390 rounded-lg bg-gradient-to-t from-[#fffffd] to-[#f8cf2c] py-22.5 dark:bg-blacksection dark:bg-gradient-to-t dark:from-transparent dark:to-transparent dark:stroke-strokedark xl:py-27.5">
+        <div className="relative z-1 max-w-c-1390 bg-gradient-to-t from-[#fffffd] to-[#f8cf2c] py-22.5 dark:bg-blacksection dark:bg-gradient-to-t dark:from-transparent dark:to-transparent dark:stroke-strokedark xl:py-27.5">
           {/* <Image
             width={335}
             height={384}
@@ -16,7 +16,7 @@ const FunFact = () => {
             alt="Man"
             className="absolute -left-15 -top-25 -z-1 lg:left-0"
           /> */}
-          <Image
+          {/* <Image
             width={132}
             height={132}
             src="/images/shape/shape-05.png"
@@ -29,7 +29,7 @@ const FunFact = () => {
             src="/images/shape/shape-05.png"
             alt="Doodle"
             className="absolute bottom-0 left-0 transform rotate-45 -z-1"
-          />
+          /> */}
 
           <motion.div
             variants={{

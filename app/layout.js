@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
       <body className="bg-[#fffffd]">
         <Providers>
           <Header />
-          <Lines />
+          {/* <Lines /> */}
           <main className="min-h-screen">{children}</main>
           <Footer />
         </Providers>
