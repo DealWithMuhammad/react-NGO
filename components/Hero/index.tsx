@@ -73,7 +73,7 @@ const Hero = () => {
               <div className="mt-8">
                 <button
                   aria-label="get started button"
-                  className="flex px-7 py-2.5 rounded-full bg-transparent border-[#f8cf2c] border-2 md:px-12 md:py-2.5 text-[#f8cf2c] duration-300 ease-in-out hover:bg-[#f8cf2c] hover:text-black"
+                  className="flex px-7 py-2.5 rounded-full bg-[#f8cf2c] border-[#f8cf2c] border-2 md:px-12 md:py-2.5 text-[#000] duration-300 ease-in-out hover:bg-transparent hover:text-[#f8cf2c]"
                 >
                   {heroContent.buttonText}
                 </button>
