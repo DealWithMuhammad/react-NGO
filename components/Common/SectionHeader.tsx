@@ -36,11 +36,14 @@ const SectionHeader = ({ headerInfo }: { headerInfo: HeaderInfo }) => {
             {title}
           </span>
         </div>
-        <h2 className="mx-auto mb-4 text-3xl font-bold text-[#252827] dark:text-white md:w-4/5 xl:w-1/2 xl:text-sectiontitle3 ">
+        <h2 className="mx-auto mb-4 text-3xl font-bold text-[#252827] dark:text-white md:w-4/5 xl:w-1/2 xl:text-sectiontitle3 relative">
           {subtitle}
+          <div className="absolute bottom-[-25px] left-1/2 transform -translate-x-1/2 h-2 bg-[#f8cf2c]  w-40"></div>
         </h2>
 
-        <p className="mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%]">{description}</p>
+        <p className="mx-auto mt-10 md:w-4/5 lg:w-3/5 xl:w-[46%]">
+          {description}
+        </p>
       </motion.div>
       {/* <!-- Section Title End --> */}
     </>
