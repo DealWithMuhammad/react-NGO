@@ -176,7 +176,7 @@ const Footer = () => {
                     Newsletter
                   </h4>
                   <p className="mb-4 w-[90%]">
-                    Subscribe to receive future updates
+                    Subscribe to receive future updates.
                   </p>
 
                   <form action="#">
