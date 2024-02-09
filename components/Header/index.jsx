@@ -95,7 +95,7 @@ export default function HeaderMenu() {
             height: "2rem",
             borderBottomLeftRadius: 15,
           }}
-          bg="#fff"
+          bg="#f8cf2c"
         >
           <IconPhone size={22} style={{ padding: "2px" }} color="#000" />
           {/* Uncomment the following lines if you want to add a phone link */}
@@ -144,7 +144,7 @@ export default function HeaderMenu() {
               <Link
                 key={index}
                 href={link.href}
-                style={{ color: "#f8cf2c", fontSize: "16px" }}
+                style={{ color: "#000", fontSize: "16px" }}
                 className={
                   "flex items-center h-full px-4 text-black font-medium text-sm hover:text-red-500"
                 }
