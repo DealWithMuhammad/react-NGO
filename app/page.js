@@ -26,7 +26,7 @@ export default function Home() {
       {/* <SAM /> */}
       <Services />
       <FunFact />
-      <Members />
+      {/* <Members /> */}
       <Blog all={false} />
       <FAQ />
       <Contribute />
