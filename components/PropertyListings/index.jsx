@@ -39,7 +39,7 @@ export default function CarouselCard({ all }) {
             title: "Foreword",
             subtitle: "Introduction to ReAct",
             description:
-              "ReAct: Empowering Refugees, Advocating for Change in Malaysia.",
+              "A collective for change, driven by refugees: ReAct - empowering voices.",
           }}
         />
         <p className="h-14 ml-6">...</p>
@@ -47,6 +47,7 @@ export default function CarouselCard({ all }) {
         <div className="space-y-6 mx-10 md:space-y-0 md:flex md:gap-6 lg:items-center lg:gap-12">
           <div className="md:5/12 lg:w-5/12">
             <Image
+              borderRadius={"200px 0px 200px 0px"}
               src="/team.jpg"
               alt="image"
               loading="lazy"
@@ -56,20 +57,23 @@ export default function CarouselCard({ all }) {
           </div>
           <div className="md:7/12 lg:w-6/12">
             <h2 className="text-2xl text-[#f8cf2c] font-bold md:text-4xl">
-              Advocating for Rights in Malaysia
+              Uniting voices. Fighting for refugee rights
             </h2>
             <p className="mt-6 text-gray-600">
               Refugee Action for Change (ReAct) is a refugee-led advocacy group
-              in Malaysia. Established in June 2019,to unify refugee leaders and
-              representatives from different nationalities and ethnicities to
-              advocate for the recognition of refugee rights in Malaysia as a
+              in Malaysia. Established in June 2019, to unify refugee leaders
+              and representatives from different nationalities and ethnicities
+              to advocate for the recognition of refugee rights in Malaysia as a
               refugee-led effort.
             </p>
             <p className="mt-6 text-gray-600">
               ReAct also works to empower the community as advocates by
-              providing relevant capacity building training and awareness
-              activities.
+              providing relevant capacity building training and
+              awareness activities.
             </p>
+            <a className="text-blue-500 hover:underline" href="/about">
+              Read More.
+            </a>
           </div>
         </div>
         {/* {loading ? ( // Show loader if loading is true

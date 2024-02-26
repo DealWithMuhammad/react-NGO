@@ -7,8 +7,8 @@ const FunFact = () => {
   return (
     <>
       {/* <!-- ===== Funfact Start ===== --> */}
-      <section className=" 2xl:px-0">
-        <div className="relative z-1 max-w-c-1390 bg-gradient-to-t from-[#fffffd] to-[#f8cf2c] py-22.5 dark:bg-blacksection dark:bg-gradient-to-t dark:from-transparent dark:to-transparent dark:stroke-strokedark xl:py-27.5">
+      <section className=" mb-0 mt-20 2xl:px-0">
+        <div className="relative z-1 max-w-c-1390  bg-[#f8cf2c] py-8 pt-8">
           {/* <Image
             width={335}
             height={384}
@@ -47,25 +47,31 @@ const FunFact = () => {
             whileInView="visible"
             transition={{ duration: 1, delay: 0.1 }}
             viewport={{ once: true }}
-            className="animate_top mx-auto mb-12.5 px-4 text-center md:w-4/5 md:px-0 lg:mb-17.5 lg:w-2/3 xl:w-1/2"
+            className="animate_top mx-auto mb-12.5 px-4  md:px-0 lg:mb-17.5 "
           >
-            <h2 className="mb-4 text-3xl font-bold text-[#252827] dark:text-white xl:text-sectiontitle3">
-              Mission
-            </h2>
-            <p className="mx-auto lg:w-11/12">
-              To advocate for the realisation of refugee rights in Malaysia,
-              specifically in their right to work, right to education and right
-              to healthcare.
-            </p>
-            <h2 className="mb-4 mt-10 text-3xl font-bold text-[#252827] dark:text-white xl:text-sectiontitle3">
-              Vision
-            </h2>
-            <p className="mx-auto lg:w-11/12">
-              The legal recognition of all refugees in Malaysia; and their right
-              to employment, right to accessible education and right to
-              affordable and quality healthcare, regardless of their age,
-              gender, nationality, ethnicity and religion.
-            </p>
+            <div className="flex justify-around mt-10 flex-wrap mx-16 ">
+              <div className="md:w-1/2">
+                <h2 className="text-3xl  font-bold text-[#252827] xl:text-sectiontitle3">
+                  Mission
+                </h2>
+                <p className="mx-auto xl:mr-[239px] ">
+                  To advocate for the realisation of refugee rights in Malaysia,
+                  specifically in their right to work, right to education and
+                  right to healthcare.
+                </p>
+              </div>
+              <div className="md:w-1/2 mt-10 md:mt-0">
+                <h2 className="text-3xl font-bold text-[#252827] xl:text-sectiontitle3">
+                  Vision
+                </h2>
+                <p className="mx-auto ">
+                  The legal recognition of all refugees in Malaysia; and their
+                  right to employment, right to accessible education and right
+                  to affordable and quality healthcare, regardless of their age,
+                  gender, nationality, ethnicity and religion.
+                </p>
+              </div>
+            </div>
           </motion.div>
 
           {/* <div className="flex flex-wrap justify-center gap-8 lg:gap-42.5">
@@ -127,7 +133,7 @@ const FunFact = () => {
                   y: 0,
                 },
               }}
-              initial="hidden"
+              initial="hidden" 
               whileInView="visible"
               transition={{ duration: 1, delay: 0.8 }}
               viewport={{ once: true }}

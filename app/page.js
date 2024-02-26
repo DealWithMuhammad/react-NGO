@@ -18,10 +18,10 @@ export default function Home() {
         {/* </div> */}
       </section>
       <PropertyListings all={false} />
+      <FunFact />
+      <Services />
       {/* <Testimonial /> */}
       {/* <SAM /> */}
-      <Services />
-      <FunFact />
       {/* <Members /> */}
       <Blog all={false} />
       <FAQ />

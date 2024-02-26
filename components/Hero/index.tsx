@@ -49,7 +49,7 @@ const Hero = () => {
         className="bg-cover flex items-center bg-center  h-[440px] lg:h-[580px] w-full text-white tracking-wider relative"
         style={{
           backgroundImage:
-            "linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/hero.jpg')",
+            "linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/hero.jpeg')",
         }}
       >
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
@@ -63,12 +63,13 @@ const Hero = () => {
                 {heroContent.title}
               </Heading>
               <h1 className="mb-5 pr-16 text-3xl font-bold text-white xl:text-hero ">
-                Advocating for Refugee Rights in{" "}
-                <span className="text-[#f8cf2c]">Malaysia.</span>
+                Together we rise, united we
+                <span className="text-[#f8cf2c]"> Advocate</span>
               </h1>
               <p className="text-white">
-                We empower refugees through training, awareness, and advocacy
-                for self-representation
+                We unify refugee leaders and representatives, advocating for
+                refugee rights and empowering the community through training and
+                awareness activities
               </p>
               <div className="mt-8">
                 <button

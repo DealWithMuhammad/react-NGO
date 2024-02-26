@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // output: "export",
   reactStrictMode: true,
   swcMinify: true,
   // images: {
@@ -13,6 +14,7 @@ const nextConfig = {
   //   ],
   // },
   images: {
+    // unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
