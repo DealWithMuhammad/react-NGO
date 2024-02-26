@@ -7,7 +7,7 @@
     "build": "next build",
     "host": "vercel --prod",
     "modules": "yarn",
-    "start": "NODE_ENV=production node server.js",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
