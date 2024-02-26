@@ -165,6 +165,20 @@ export default function page() {
               </div>
             </div>
           </div>
+
+          {/* Conclusion */}
+          <p className="mt-10">
+            ReAct, a refugee-led advocacy group in Malaysia, has been dedicated
+            to unifying and empowering refugee leaders and representatives since
+            its establishment in 2019. Through their mission to advocate for
+            refugee rights and their vision of legal recognition and access to
+            education, healthcare, and employment, ReAct has strategically
+            worked towards improving the lives of refugees in Malaysia. Despite
+            challenges faced in the past, ReAct has taken steps to strengthen
+            their organization through capacity building and leadership
+            training, demonstrating their commitment to creating lasting change
+            for the refugee community.
+          </p>
         </div>
       </div>
     </section>
