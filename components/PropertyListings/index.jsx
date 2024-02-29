@@ -12,23 +12,23 @@ import { Spinner } from "@nextui-org/react";
 import { Image } from "@chakra-ui/react";
 
 export default function CarouselCard({ all }) {
-  const [propertiesData, setPropertiesData] = useState([]);
-  const [loading, setLoading] = useState(true);
+  // const [propertiesData, setPropertiesData] = useState([]);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const fetchedBlogData = await getBlogs();
-      setPropertiesData(
-        fetchedBlogData.filter((blog) => blog.category === "PROJECTS")
-      );
-      setLoading(false);
-    };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const fetchedBlogData = await getBlogs();
+  //     setPropertiesData(
+  //       fetchedBlogData.filter((blog) => blog.category === "PROJECTS")
+  //     );
+  //     setLoading(false);
+  //   };
 
-    fetchData();
-  }, [all]);
+  //   fetchData();
+  // }, [all]);
 
-  const slicedPropertiesData =
-    all === true ? propertiesData : propertiesData.slice(0, 3);
+  // const slicedPropertiesData =
+  //   all === true ? propertiesData : propertiesData.slice(0, 3);
 
   return (
     <section id="features" className="py-10 ">
