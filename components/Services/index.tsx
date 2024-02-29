@@ -8,20 +8,20 @@ const Index = () => {
   return (
     <>
       {/* <!-- ===== Features Start ===== --> */}
-      <section id="features" className="py-20 lg:py-25 xl:py-30">
+      <section id="features" className=" py-10">
         <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: "Goals & Objectives",
-              subtitle: "Our Objectives in Advocacy and Empowerment",
+              title: "Our Objectives",
+              subtitle: "Our Objectives",
               description:
-                "Empowering refugee leaders, fostering collaboration, and advocating for rights in Malaysia",
+                "",
             }}
           />
           {/* <!-- Section Title End --> */}
 
-          <div className="mt-12.5 mx-10 grid grid-cols-1 gap-7.5 md:grid-cols-2 lg:mt-15 lg:grid-cols-3 xl:mt-10 xl:gap-12.5">
+          <div className="mt-2 mx-10 grid rounded-lg border border-white shadow-solid-3 transition-all hover:shadow-solid-4-strokedark bg-[#272727] grid-cols-1 gap-7.5 md:grid-cols-2  lg:grid-cols-3  xl:gap-12.5">
             {/* <!-- Features item Start --> */}
 
             {featuresData.map((feature, key) => (

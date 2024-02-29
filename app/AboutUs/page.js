@@ -1,6 +1,20 @@
 import { Image } from "@chakra-ui/react";
+import Cards from "components/Cards";
 import SectionHeader from "components/Common/SectionHeader";
 import FunFact from "components/FunFact";
+import Services from "components/Services";
+
+
+import React from "react";
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  CardFooter,
+  Divider,
+  Link,
+} from "@nextui-org/react";
+import Members from "components/Members";
 
 export default function page() {
   return (
@@ -18,78 +32,34 @@ export default function page() {
           description: "",
         }}
       />
-      <div className="py-16 mx-10 ">
+      <div className="pb-16 mx-10 ">
+        <div className="mb-10">
+          <p className="mt-0 text-2xl mb-10 text-center text-gray-600">
+            Refugee Action for Change (ReAct) is a refugee-led advocacy group in
+            Malaysia. Established in June 2019, to unify refugee leaders and
+            representatives from different nationalities and ethnicities to
+            advocate for the recognition of refugee rights in Malaysia as a
+            refugee-led effort. ReAct also works to empower the community as
+            advocates by providing relevant capacity building training and
+            awareness activities.
+          </p>
+        </div>
+        <div className="w-full">
+          <Image
+            src="/about.jpg"
+            alt="image"
+            loading="lazy"
+            width=""
+            height=""
+          />
+        </div>
+        <Cards />
+
+      <Members/>
         <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
-          <div className="space-y-6 md:space-y-0 md:flex md:gap-6  lg:gap-12">
-            <div className="md:5/12 lg:w-5/12">
-              <Image
-                src="/about.jpg"
-                alt="image"
-                loading="lazy"
-                width=""
-                height=""
-              />
-            </div>
-            <div className="md:7/12 lg:w-6/12">
-              <p className="mt-0 text-gray-600">
-                Refugee Action for Change (ReAct) is a refugee-led advocacy
-                group in Malaysia. Established in June 2019, to unify refugee
-                leaders and representatives from different nationalities and
-                ethnicities to advocate for the recognition of refugee rights in
-                Malaysia as a refugee-led effort.
-              </p>
-              <p className="mt-2 text-gray-600">
-                ReAct also works to empower the community as advocates by
-                providing relevant capacity building training and
-                awareness activities.
-              </p>
-              <p className="font-bold mt-6">Mission</p>
-              <p>
-                To advocate for the realisation of refugee rights in Malaysia,
-                specifically in their right to work, right to education and
-                right to healthcare.
-              </p>
-              <p className="font-bold mt-6">Vision</p>
-              <p>
-                The legal recognition of all refugees in Malaysia; and their
-                right to employment, right to accessible education and right to
-                affordable and quality healthcare, regardless of their age,
-                gender, nationality, ethnicity and religion.
-              </p>
-            </div>
-          </div>
-          <div className="mt-10">
-            <h1 className="text-4xl text-black ml-4 font-bold">Objectives</h1>
-            <div className="ml-8 mt-3">
-              <ul className="list-decimal mx-10">
-                <li>
-                  Empower refugee leaders with advocacy skills and knowledge for
-                  effective community representation.
-                </li>
-                <li>
-                  Facilitate refugee engagement in advocating for their rights
-                  and protection.
-                </li>
-                <li>
-                  Foster collaboration among refugee groups and community-based
-                  organizations to collectively support refugee rights.
-                </li>
-                <li>
-                  Advocate for policy and legal changes to ensure refugees in
-                  Malaysia have access to jobs, education, and affordable
-                  healthcare.
-                </li>
-                <li>
-                  Strategically plan and execute initiatives to improve refugee
-                  rights and safety.
-                </li>
-                <li>
-                  Increase local public support for refugees to enhance their
-                  rights and protection in Malaysia.
-                </li>
-              </ul>
-            </div>
-          </div>
+      
+
+      
           {/* History */}
           <div className="mt-10">
             <h1 className="text-4xl ml-4 text-black font-bold">
@@ -181,6 +151,8 @@ export default function page() {
           </p>
         </div>
       </div>
+
+      {/* Cards */}
     </section>
   );
 }

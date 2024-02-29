@@ -19,7 +19,7 @@ export default function Home() {
       </section>
       <PropertyListings all={false} />
       <FunFact />
-      <Services />
+      {/* <Services /> */}
       {/* <Testimonial /> */}
       {/* <SAM /> */}
       {/* <Members /> */}
