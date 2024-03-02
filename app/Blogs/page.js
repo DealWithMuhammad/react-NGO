@@ -1,22 +1,10 @@
-"use client";
-import { useState } from "react";
-import Blog from "components/Blog";
-import BlogTabs from "components/BlogTabs";
-import Header from "components/Header";
+import BlogsListing from "components/BlogsListing/";
 
-export default function Page() {
-  const [selectedCategory, setSelectedCategory] = useState("LAWS & TAXES");
-
-  const selectCategory = (cat) => {
-    setSelectedCategory(cat);
-  };
-
+export default function page() {
   return (
-    <>
-      <section className="w-screen flex flex-col justify-center overflow-hidden backdrop-blur-sm ">
-        <br />
-        <Blog all={false} />
-      </section>
-    </>
+    <div>
+      <BlogsListing all={true} category={"BLOG"} />
+    </div>
   );
 }
+ 

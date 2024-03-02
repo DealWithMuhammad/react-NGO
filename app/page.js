@@ -5,7 +5,6 @@ import PropertyListings from "components/PropertyListings";
 import Services from "components/Services";
 import FunFact from "components/FunFact";
 import FAQ from "components/FAQ";
-import Blog from "components/Blog";
 import Contribute from "components/Contribute";
 
 export default function Home() {

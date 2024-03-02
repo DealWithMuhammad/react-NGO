@@ -1,14 +1,12 @@
 "use client";
 import PostForm from "components/Management/PostForm";
-import { Flex, Spinner } from "@chakra-ui/react";
-import SectionHeader from "components/Common/SectionHeader";
+import SectionHeader from "components/common/SectionHeader";
 import { updateDoc } from "api/functions/post";
-import { useToast } from "@chakra-ui/react";
 import { getDocById } from "api/functions/get";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { Container } from "@mantine/core";
-import Header from "components/Header";
+import { Center, Container } from "@mantine/core";
+import { Spinner } from "@nextui-org/react";
 
 export default function Page() {
   const pathname = usePathname();
@@ -29,45 +27,33 @@ export default function Page() {
     fetchData();
   }, [pathname]);
 
-  const toast = useToast();
-  const handleSave = async (data) => {
-    try {
-      const res = await updateDoc(data, "blogs");
-      if (res === true) {
-        toast({
-          title: "Post Modified.",
-          status: "success",
-          duration: 9000,
-          isClosable: true,
-        });
-      }
-    } catch (error) {
-      toast({
-        title: "Something Went Wrong.",
-        description: `Error: ${error}`,
-        status: "error",
-        duration: 9000,
-        isClosable: true,
-      });
+  const handleSave = async (id, data) => {
+    if (id.length > 5) {
+      try {
+        const res = await updateDoc("blogs", id, data);
+        if (res === true) {
+        }
+      } catch (error) {}
+    } else {
+      console.log("post not found to modify");
     }
   };
 
   return (
     <>
-      <Header admin={true} />
+      {/* <Header admin={true} /> */}
       <Container size={"lg"}>
         {loading ? ( // Show loader if loading is true
-          <Flex height="100vh" align="center" justify="center">
+          <Center height="100vh" className="mt-[30vh]">
             <Spinner size="xl" />
-          </Flex>
+          </Center>
         ) : (
           <>
             <SectionHeader
               headerInfo={{
                 title: "Post Form",
                 subtitle: "Modify Post",
-                description:
-                  "We offer a comprehensive range of architectural and construction services to bring your ideas to clients.",
+                description: "",
               }}
             />
             <PostForm handleSave={handleSave} props={blogData} />

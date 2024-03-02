@@ -1,23 +1,12 @@
-// Import necessary components from Chakra UI
-"use client";
-
-import { Box, Text, IconButton, Flex } from "@chakra-ui/react";
-import { Container } from "@mantine/core";
-import { BarChart, People } from "@mui/icons-material";
+import { ActionIcon, Box, Container, Flex, Text } from "@mantine/core";
 import SectionHeader from "components/Common/SectionHeader";
-import { useRouter } from "next/navigation";
-import Header from "components/Header";
+import Link from "next/link";
+import { FaPeopleRobbery } from "react-icons/fa6";
+import { FaChartSimple } from "react-icons/fa6";
 
-export default function DashboardPage() {
-  const router = useRouter();
-
-  const nav = (page) => {
-    router.push(`management/${page}`);
-  };
-
+export default function Page() {
   return (
     <>
-      {/* <StatsGrid /> */}
       <Container size={"lg"}>
         <SectionHeader
           headerInfo={{
@@ -28,52 +17,34 @@ export default function DashboardPage() {
         />
 
         {/* Action buttons in big cards */}
-        <Flex mt={6} flexWrap={"wrap"} gap={5}>
+        <Flex mt={6} className="flex flex-wrap" gap={5}>
           {/* Campaign Management card */}
-          <Box
-            bg="blue.100"
-            p={8}
-            borderRadius="md"
-            flex="1"
-            mr={4}
-            onClick={() => nav("blogs")}
-            _hover={{ cursor: "pointer", bg: "blue.200" }}
-          >
-            <IconButton
-              colorScheme="blue"
-              aria-label="Campaign Management"
-              icon={<BarChart />}
-              fontSize="2xl"
-            />
-            <Text mt={2} fontWeight="bold">
-              Posts Management
-            </Text>
-            <Text mt={1} fontSize="sm">
-              Manage your posts here.
-            </Text>
+          <Box className="min-w-[40vw] bg-blue-500 rounded-md flex-1 mr-2 p-6 cursor-pointer">
+            <Link href={"/management/blogs"}>
+              <ActionIcon variant="light" color="dark" aria-label="Settings">
+                <FaPeopleRobbery />
+              </ActionIcon>
+              <Text mt={2} fontWeight="bold">
+                Posts Management
+              </Text>
+              <Text mt={1} fontSize="sm">
+                Manage your posts here.
+              </Text>
+            </Link>
           </Box>
-
           {/* Founder Management card */}
-          <Box
-            bg="green.100"
-            p={8}
-            borderRadius="md"
-            flex="1"
-            onClick={() => nav("post")}
-            _hover={{ cursor: "pointer", bg: "green.200" }}
-          >
-            <IconButton
-              colorScheme="green"
-              aria-label="Publish New Post"
-              icon={<People />}
-              fontSize="2xl"
-            />
-            <Text mt={2} fontWeight="bold">
-              Publish Post
-            </Text>
-            <Text mt={1} fontSize="sm">
-              Publish Post and blogs.
-            </Text>
+          <Box className="min-w-[40vw] bg-green-500 rounded-md flex-1 mr-2 p-6 cursor-pointer">
+            <Link href={"/management/post"}>
+              <ActionIcon variant="light" color="dark" aria-label="Settings">
+                <FaChartSimple />
+              </ActionIcon>
+              <Text mt={2} fontWeight="bold">
+                Publish Post
+              </Text>
+              <Text mt={1} fontSize="sm">
+                Publish Post and blogs.
+              </Text>
+            </Link>
           </Box>
         </Flex>
       </Container>
