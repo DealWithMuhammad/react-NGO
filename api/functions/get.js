@@ -37,4 +37,17 @@ async function getBlogs() {
   }
 }
 
-export { getDocById, getBlogs };
+async function getInbox() {
+  try {
+    const q = collection(db, "inbox");
+    const querySnapshot = await getDocs(q);
+    const documents = querySnapshot.docs.map((doc) => doc.data());
+    console.log(documents);
+    return documents;
+  } catch (error) {
+    console.log("Something Went Wrong fetching");
+    return false;
+  }
+}
+
+export { getDocById, getBlogs, getInbox };
