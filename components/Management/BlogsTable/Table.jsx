@@ -14,9 +14,7 @@ import {
 import { EditIcon } from "./EditIcon";
 import { DeleteIcon } from "./DeleteIcon";
 import { useRouter } from "next/navigation";
-
-const blogImage =
-  "https://img.freepik.com/free-vector/organic-flat-public-relations-concept-illustrated_23-2148891121.jpg?w=826&t=st=1706520947~exp=1706521547~hmac=f43b1352b77ccfdbc013661d41e20503e63fce761289eed74274e22fc61c7b4f";
+import { deleteDocument } from "api/functions/post";
 
 const statusColorMap = {
   active: "success",
@@ -28,8 +26,12 @@ const truncateText = (text, limit) => {
   return text.substring(0, limit) + "...";
 };
 
-export default function BlogsTable({ blogs, columns, handleDelete }) {
+export default function BlogsTable({ blogs, columns }) {
   const router = useRouter();
+
+  const handleDelete = async (id) => {
+    await deleteDocument("blogs", id);
+  };
 
   const renderCell = React.useCallback(
     (blog, columnKey) => {
@@ -90,7 +92,7 @@ export default function BlogsTable({ blogs, columns, handleDelete }) {
           return truncateText(cellValue, characterLimit);
       }
     },
-    [router, handleDelete]
+    [router]
   );
 
   return (

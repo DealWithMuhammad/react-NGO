@@ -3,9 +3,9 @@
 import { useEffect, useState } from "react";
 import Table from "./Table";
 import { getBlogs } from "api/functions/get";
-import { Flex } from "@chakra-ui/react";
 import { Spinner } from "@nextui-org/react";
 import { deleteDocument } from "api/functions/post";
+import { Flex } from "@mantine/core";
 
 export default function BlogsTable() {
   const [blogs, setBlogs] = useState([]);
