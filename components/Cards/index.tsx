@@ -22,7 +22,7 @@ export default function Cards() {
             </div>
           </CardHeader>
           <CardBody className="py-3 mb-2">
-            <p className="text-white text-sm md:text-xl">
+            <p className="text-white text-sm md:text-large">
               To advocate for the realisation of refugee rights in Malaysia,
               specifically in their right to work, right to education and right
               to healthcare.
@@ -39,7 +39,7 @@ export default function Cards() {
             </div>
           </CardHeader>
           <CardBody className="py-3 mb-2">
-            <p className="text-white text-sm md:text-xl">
+            <p className="text-white text-sm md:text-large">
               The legal recognition of all refugees in Malaysia; and their right
               to employment, right to accessible education and right to
               affordable and quality healthcare, regardless of their age,
