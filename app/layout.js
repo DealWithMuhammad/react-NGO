@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "components/Header";
 import Footer from "components/Footer";
 import Lines from "components/Lines";
+import NextTopLoader from "nextjs-toploader";
 
 export const metadata = {
   title: "ReAct Malaysia",
@@ -15,6 +16,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-[#fffffd]">
         <Providers>
+          <NextTopLoader color="#f8cf2c" />
+
           <Header />
           {/* <Lines /> */}
           <main className="min-h-screen">{children}</main>

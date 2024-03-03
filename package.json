@@ -27,6 +27,7 @@
     "framer-motion": "^10.16.16",
     "next": "14.0.4",
     "next-video": "^0.11.1",
+    "nextjs-toploader": "^1.6.6",
     "react": "^18",
     "react-awesome-slider": "^4.1.0",
     "react-dom": "^18",
