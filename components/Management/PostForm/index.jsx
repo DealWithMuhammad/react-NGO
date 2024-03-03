@@ -7,6 +7,9 @@ import { Autocomplete, AutocompleteItem, Input } from "@nextui-org/react";
 import DropzoneButton from "./Dropzone/index";
 import "react-quill/dist/quill.snow.css";
 
+// Import react-hot-toast
+import { toast } from "react-hot-toast";
+
 const Editor = dynamic(() => import("react-quill"), {
   ssr: false,
 });
@@ -34,6 +37,8 @@ export default function PostForm({ handleSave, props }) {
 
   const handleSaveContent = () => {
     handleSave(props?.id, { ...formData, about: about });
+    // Show toast notification when content is saved
+    toast.success("Content saved successfully!");
   };
 
   return (

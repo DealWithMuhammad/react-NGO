@@ -38,12 +38,13 @@ const BlogsListing = ({ all, category }) => {
     );
   }
   return (
-    <Container size={"lg"}>
+    <Container mt={10} size={"lg"}>
       <SectionHeader
         headerInfo={{
           title: "OUR News and Blogs",
-          subtitle: "",
-          description: "",
+          subtitle: "Latest News & Blog",
+          description:
+            "Explore ReAct's impactful journey and stay updated on refugee rights advocacy and community empowerment through our News and Blogs section.",
         }}
       />
       <div className="gap-4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

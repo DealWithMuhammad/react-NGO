@@ -1,4 +1,4 @@
-import BlogsListing from "components/BlogsListing/";
+import BlogsListing from "components/BlogsListing";
 
 export default function page() {
   return (
@@ -7,4 +7,3 @@ export default function page() {
     </div>
   );
 }
- 
