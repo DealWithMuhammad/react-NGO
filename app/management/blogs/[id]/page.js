@@ -1,12 +1,12 @@
 "use client";
 import PostForm from "components/Management/PostForm";
-import SectionHeader from "components/common/SectionHeader";
 import { updateDoc } from "api/functions/post";
 import { getDocById } from "api/functions/get";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Center, Container } from "@mantine/core";
 import { Spinner } from "@nextui-org/react";
+import SectionHeader from "../../../../components/Common/SectionHeader";
 
 export default function Page() {
   const pathname = usePathname();
