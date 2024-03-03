@@ -1,8 +1,6 @@
 import { Image } from "@chakra-ui/react";
 import Cards from "components/Cards";
 import SectionHeader from "components/Common/SectionHeader";
-import FunFact from "components/FunFact";
-import Services from "components/Services";
 
 import React from "react";
 import {
