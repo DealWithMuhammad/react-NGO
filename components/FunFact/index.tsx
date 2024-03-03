@@ -7,8 +7,8 @@ const FunFact = () => {
   return (
     <>
       {/* <!-- ===== Funfact Start ===== --> */}
-      <section className=" mb-0 mt-20 2xl:px-0">
-        <div className="relative z-1 max-w-c-1390  bg-[#f8cf2c] py-8 pt-8">
+      <div className=" mb-0 mt-20 w-[100%]">
+        <div className="relative z-1  bg-[#f8cf2c] py-8 pt-8">
           {/* <Image
             width={335}
             height={384}
@@ -47,7 +47,7 @@ const FunFact = () => {
             whileInView="visible"
             transition={{ duration: 1, delay: 0.1 }}
             viewport={{ once: true }}
-            className="animate_top mx-auto mb-12.5 px-4  md:px-0 lg:mb-17.5 "
+            className="animate_top mb-12.5 px-4  md:px-0 lg:mb-17.5 "
           >
             <div className="flex justify-around mt-10 flex-wrap mx-16 ">
               <div className="md:w-1/2">
@@ -146,7 +146,7 @@ const FunFact = () => {
             </motion.div>
           </div> */}
         </div>
-      </section>
+      </div>
       {/* <!-- ===== Funfact End ===== --> */}
     </>
   );
