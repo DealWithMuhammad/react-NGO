@@ -30,7 +30,9 @@ export default function Home() {
         <BlogsListing />
       </div>
       <FAQ />
-      <Contribute />
+      <div className="my-14">
+        <Contribute />
+      </div>
       {/* <FeaturesTab /> */}
       {/* <Integration /> */}
       {/* <About /> */}

@@ -16,8 +16,8 @@ const FAQ = () => {
   return (
     <>
       {/* <!-- ===== FAQ Start ===== --> */}
-      <section className="overflow-hidden mx-10 pb-20 lg:pb-25 xl:pb-30">
-        <div className="relative mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
+      <section className="overflow-hidden bg-[#ededed] pb-20 lg:pb-25 xl:pb-30">
+        <div className="relative mx-10 max-w-c-1235 px-4 md:px-8 xl:px-0">
           <div className="absolute -bottom-16 -z-1 h-full w-full">
             <Image
               fill
@@ -81,7 +81,7 @@ const FAQ = () => {
               viewport={{ once: true }}
               className="animate_right md:w-3/5 lg:w-1/2"
             >
-              <div className="rounded-lg bg-white shadow-solid-8 dark:border dark:border-strokedark dark:bg-blacksection">
+              <div className="rounded-lg mt-10  shadow-solid-8 dark:border dark:border-strokedark dark:bg-blacksection">
                 {faqData.map((faq, key) => (
                   <FAQItem
                     key={key}
