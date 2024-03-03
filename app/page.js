@@ -12,17 +12,10 @@ export default function Home() {
   return (
     <main className="backdrop-blur-sm">
       <section className="relative">
-        {/* <HeroVideo /> */}
-        {/* <div className="absolute z-99 top-0"> */}
         <Hero />
-        {/* </div> */}
       </section>
       <PropertyListings all={false} />
       <FunFact />
-      {/* <Testimonial /> */}
-      {/* <SAM /> */}
-      {/* <Members /> */}
-      {/* <Blog all={false} /> */}
       <Feature />
       <div className="my-14">
         <BlogsListing />
@@ -31,10 +24,6 @@ export default function Home() {
       <div className="my-14">
         <Contribute />
       </div>
-      {/* <FeaturesTab /> */}
-      {/* <Integration /> */}
-      {/* <About /> */}
-      {/* <Pricing /> */}
     </main>
   );
 }
