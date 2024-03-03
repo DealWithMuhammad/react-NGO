@@ -26,7 +26,9 @@ export default function Home() {
       {/* <Members /> */}
       {/* <Blog all={false} /> */}
       <Feature />
-      <BlogsListing />
+      <div className="my-14">
+        <BlogsListing />
+      </div>
       <FAQ />
       <Contribute />
       {/* <FeaturesTab /> */}
