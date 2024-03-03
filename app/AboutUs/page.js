@@ -33,7 +33,7 @@ export default function page() {
       />
       <div className="pb-16 mx-10 ">
         <div className="mb-10">
-          <p className="mt-0 text-base md:text-2xl mb-10 text-center text-gray-600">
+          <p className="mt-0 text-base md:text-xl md:mx-10 mx-0 mb-10 text-center text-gray-600">
             Refugee Action for Change (ReAct) is a refugee-led advocacy group in
             Malaysia. Established in June 2019, to unify refugee leaders and
             representatives from different nationalities and ethnicities to
