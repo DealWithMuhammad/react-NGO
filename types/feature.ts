@@ -1,9 +1,8 @@
+import { IconType } from "react-icons";
+
 export type Feature = {
   id: number;
-  image: string;
-  href: string;
-  icon: string;
+  icon: IconType;
   title: string;
-  subtitle: string;
   description: string;
 };
