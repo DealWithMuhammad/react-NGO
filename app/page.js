@@ -7,6 +7,7 @@ import FunFact from "components/FunFact";
 import FAQ from "components/FAQ";
 import Contribute from "components/Contribute";
 import BlogsListing from "components/BlogsListing";
+import Feature from "components/Features";
 
 export default function Home() {
   return (
@@ -24,8 +25,8 @@ export default function Home() {
       {/* <SAM /> */}
       {/* <Members /> */}
       {/* <Blog all={false} /> */}
+      <Feature />
       <BlogsListing />
-
       <FAQ />
       <Contribute />
       {/* <FeaturesTab /> */}
