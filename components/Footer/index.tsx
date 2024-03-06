@@ -98,7 +98,7 @@ const Footer = () => {
                         href="/Construction"
                         className="mb-3 inline-block hover:text-primary"
                       >
-                        Activites
+                        FAQ's
                       </Link>
                     </li>
                   </ul>
