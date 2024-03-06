@@ -1,9 +1,11 @@
 import React from "react";
 import { Feature } from "../../types/feature";
 import { motion } from "framer-motion";
+import { Button } from "@mantine/core";
+import Link from "next/link";
 
 const SingleFeature = ({ feature }: { feature: Feature }) => {
-  const { icon: Icon, title, description } = feature; // Destructure icon as Icon
+  const { icon: Icon, title, description, href } = feature; // Destructure icon as Icon
 
   return (
     <>
@@ -31,6 +33,12 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
           {title}
         </h3>
         <p>{description}</p>
+        <br />
+        <Link href={href}>
+          <Button bg={"#f8cf2c"} c={"#000"}>
+            Learn More
+          </Button>
+        </Link>
       </motion.div>
     </>
   );

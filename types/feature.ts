@@ -5,4 +5,5 @@ export type Feature = {
   icon: IconType;
   title: string;
   description: string;
+  href: string;
 };
