@@ -1,4 +1,4 @@
-import SectionHeader from "components/common/SectionHeader";
+import SectionHeader from "components/Common/SectionHeader";
 import Service from "./Service";
 import { Container, Image } from "@mantine/core";
 
