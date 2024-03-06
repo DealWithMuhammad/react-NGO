@@ -64,14 +64,14 @@
 // export default ServiceData;
 
 // import { Feature } from "../../../types/feature
-import { Feature } from "../../../types/feature";
+
 import { RiGovernmentLine } from "react-icons/ri";
 import { TbBuildingCommunity } from "react-icons/tb";
 import { TfiLayoutMediaLeft } from "react-icons/tfi";
 import { MdModelTraining } from "react-icons/md";
 import { MdOutlineMeetingRoom } from "react-icons/md";
 
-const featuresData: Feature[] = [
+const Feature = [
   {
     id: 1,
     icon: MdOutlineMeetingRoom,
@@ -79,7 +79,8 @@ const featuresData: Feature[] = [
     href: "/services/react-general-meeting",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
-    imageUrl:""
+    imageUrl:"/about.jpg",
+    details:"loremfjdnbhjebfhebfhebfhehfbehfebfhebfhebfhebfheb"
   },
   {
     id: 2,
@@ -88,7 +89,8 @@ const featuresData: Feature[] = [
     href: "/services/media-engagement",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
-    imageUrl:""
+    imageUrl: "",
+    details:"lorem ffmekfenfjenfuefyebfefbefeufn"
   },
   {
     id: 3,
@@ -97,7 +99,8 @@ const featuresData: Feature[] = [
     href: "/services/goverment-engagement",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
-    imageUrl:""
+    imageUrl: "",
+    details:"ndjfnejfnejfnejfnefjnejf"
   },
   {
     id: 4,
@@ -106,7 +109,8 @@ const featuresData: Feature[] = [
     href: "/services/capacity-building-trainings",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
-    imageUrl:""
+    imageUrl: "",
+    details:"cfnejfnejfnjefnjefnjefnjefn"
     
   },
   {
@@ -115,10 +119,12 @@ const featuresData: Feature[] = [
     title: "Comunity Engagements And Advocacy",
     href: "/services/community-engagement",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
-    imageUrl:""
+      "Refugee Action for Change (ReAct) is an advocacy group represented and led by refugees in Malaysia.",
+    imageUrl: "",
+    details: "As a refugee-led effort, our purpose is to unify forcibly displaced individuals and groups from different nationalities and ethnicities as one, and raise awareness to push for the recognition of refugee rights in Malaysia.",
+    heading: "Community Engagements & Partnerships",
     
   },
 ];
 
-export default featuresData;
+export default Feature;

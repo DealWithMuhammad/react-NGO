@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import ServiceData from "./ServiceData";
-import { Container } from "@mantine/core";
+import { Image } from "@mantine/core";
 import { Link } from "@nextui-org/react";
 import SectionHeader from "components/Common/SectionHeader";
 
@@ -13,7 +13,7 @@ export default function Service() {
   // Find the service with a matching id
   const service = ServiceData.find((service) => service.href.includes(id));
 
-  const { title, description } = service;
+  const { title, description, imageUrl, details } = service;
   // details
   return (
     <div>
@@ -23,11 +23,24 @@ export default function Service() {
             headerInfo={{
               title: title,
               subtitle: title,
+              description: description,
+            }}
+          />
+          <Image
+            src={service.imageUrl}
+            alt={"Room"}
+            loading="eager"
+            radius={"lg"}
+            style={{
+              width: "auto",
+              height: "70vh",
+              margin: "auto",
+              objectFit: "cover",
             }}
           />
           <article className="mx-auto max-w-screen-md ">
             <div className="prose mx-auto my-3 text-xl text-slate-500 text-center font-semibold dark:prose-invert prose-a:text-blue-600">
-              {description}
+              {details}
             </div>
             <div className="mb-7 mt-7 flex justify-center">
               <Link
