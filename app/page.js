@@ -7,6 +7,7 @@ import FAQ from "components/FAQ";
 import Contribute from "components/Contribute";
 import BlogsListing from "components/BlogsListing";
 import Feature from "components/Features";
+import Services from "components/Services";
 
 export default function Home() {
   return (
@@ -16,7 +17,8 @@ export default function Home() {
       </section>
       <PropertyListings all={false} />
       <FunFact />
-      <Feature />
+      {/* <Feature /> */}
+      <Services all={true} />
       <div className="my-14">
         <BlogsListing />
       </div>
