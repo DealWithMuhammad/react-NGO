@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 import ServiceData from "./ServiceData";
 import { Container } from "@mantine/core";
 import { Link } from "@nextui-org/react";
-import SectionHeader from "components/common/SectionHeader";
+import SectionHeader from "components/Common/SectionHeader";
 
 export default function Service() {
   const pathname = usePathname();
@@ -13,20 +13,20 @@ export default function Service() {
   // Find the service with a matching id
   const service = ServiceData.find((service) => service.href.includes(id));
 
-  const { name, details } = service;
-
+  const { title, description } = service;
+  // details
   return (
     <div>
       {service ? (
         <>
           <SectionHeader
             headerInfo={{
-              title: name,
+              title: title,
             }}
           />
           <article className="mx-auto max-w-screen-md ">
             <div className="prose mx-auto my-3 text-xl text-slate-500 text-center font-semibold dark:prose-invert prose-a:text-blue-600">
-              {details}
+              {description}
             </div>
             <div className="mb-7 mt-7 flex justify-center">
               <Link

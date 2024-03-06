@@ -15,7 +15,7 @@ const ServiceData = [
   {
     name: "ReAct General Meeting",
     icon: <FaHome />,
-    href: "/services/home-design",
+    href: "/services/react-general-meeting",
     details:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
   },

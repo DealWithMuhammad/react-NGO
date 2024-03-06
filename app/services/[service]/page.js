@@ -7,8 +7,8 @@ export default function page() {
     <Container size={"lg"} className="w-full justify-center">
       <SectionHeader
         headerInfo={{
-          title: "Our Services",
-          subtitle: "Transforming Spaces, Creating Dreams",
+          title: "",
+          subtitle: "ReAct General Meeting",
           description:
             "Discover a range of premium home renovation services designed to elevate your living spaces. From stunning home designs to complete renovations, we specialize in turning your vision into reality. Explore our services and take the first step towards the home of your dreams.",
         }}
