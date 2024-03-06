@@ -11,20 +11,21 @@ const Services = ({ all }) => {
   return (
     <>
       {/* <!-- ===== Features Start ===== --> */}
-      <Container size={"lg"} id="services">
-        <div>
+      <section id="features" className="py-20 lg:py-25 bg-[#ededed] xl:py-30">
+        <div className="mx-auto max-w-c-1315 px-4 md:px-8 xl:px-0">
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: "Our Projects",
-              subtitle: "Building Your Dream Space, from Vision to Reality",
-              description:
-                "We offer a comprehensive range of architectural and construction services to bring your ideas to life.",
+              title: "",
+              subtitle: "Projects of ReAct",
+              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
+            ante in maximus.`,
             }}
           />
           {/* <!-- Section Title End --> */}
 
-          <div className="mt-12.5 grid grid-cols-1 gap-7.5 md:grid-cols-2 lg:mt-15 lg:grid-cols-3 xl:mt-20 xl:gap-12.5">
+          <div className="mt-12.5 flex flex-wrap justify-center  gap-7.5  xl:mt-20 xl:gap-12.5">
             {/* <!-- Features item Start --> */}
 
             {sliceServiceData.map((feature, key) => (
@@ -33,7 +34,7 @@ const Services = ({ all }) => {
             {/* <!-- Features item End --> */}
           </div>
         </div>
-      </Container>
+      </section>
 
       {/* <!-- ===== Features End ===== --> */}
     </>

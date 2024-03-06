@@ -6,4 +6,5 @@ export type Feature = {
   title: string;
   description: string;
   href: string;
+  imageUrl: string;
 };

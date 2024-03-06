@@ -22,6 +22,7 @@ export default function Service() {
           <SectionHeader
             headerInfo={{
               title: title,
+              subtitle: title,
             }}
           />
           <article className="mx-auto max-w-screen-md ">

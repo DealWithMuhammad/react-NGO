@@ -1,5 +1,4 @@
 import { Feature } from "../../types/feature";
-
 import { RiGovernmentLine } from "react-icons/ri";
 import { TbBuildingCommunity } from "react-icons/tb";
 import { TfiLayoutMediaLeft } from "react-icons/tfi";
@@ -11,17 +10,16 @@ const featuresData: Feature[] = [
     id: 1,
     icon: MdOutlineMeetingRoom,
     title: "ReAct General Meeting",
-    href: "/Projects/react-general-meeting",
+    href: "/services/react-general-meeting",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
     imageUrl: "",
   },
-
   {
     id: 2,
     icon: RiGovernmentLine,
     title: "Media Engagement",
-    href: "/Projects/media-engagement",
+    href: "/services/media-engagement",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
     imageUrl: "",
@@ -30,7 +28,7 @@ const featuresData: Feature[] = [
     id: 3,
     icon: TfiLayoutMediaLeft,
     title: "Goverment Engagement",
-    href: "/Projects/goverment-engagement",
+    href: "/services/goverment-engagement",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
     imageUrl: "",
@@ -39,7 +37,7 @@ const featuresData: Feature[] = [
     id: 4,
     icon: MdModelTraining,
     title: "Capacity Building Trainings",
-    href: "/Projects/capacity-building-trainings",
+    href: "/services/capacity-building-trainings",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
     imageUrl: "",
@@ -48,7 +46,7 @@ const featuresData: Feature[] = [
     id: 5,
     icon: TbBuildingCommunity,
     title: "Comunity Engagements And Advocacy",
-    href: "/Projects/community-engagement",
+    href: "/services/community-engagement",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
     imageUrl: "",
