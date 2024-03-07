@@ -4,7 +4,7 @@ const KnowMore = ({ link }) => {
   return (
     <Link
       href={"/FAQs"}
-      className="group mt-7.5 inline-flex items-center gap-2.5 text-[#252827] hover:text-primary dark:text-white dark:hover:text-primary"
+      className="group mt-7.5 inline-flex items-center gap-2.5 text-[#252827] hover:text-[#f8cf2c] dark:text-white"
     >
       <span className="duration-300 group-hover:pr-2">Know More</span>
       <svg
