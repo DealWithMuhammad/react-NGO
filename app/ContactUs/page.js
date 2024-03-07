@@ -14,8 +14,8 @@ export default function page() {
       <SectionHeader
         headerInfo={{
           title: "CONTACT US FOR MORE INFORMATION",
-          subtitle: "TALK TO US",
-          description: "FIND DETAILED INFORMATION ABOUT THE COMPANY HERE",
+          subtitle: "Talk to us",
+          description: "Find details about our Organization",
         }}
       />
       <Contact />
