@@ -5,7 +5,7 @@ import { Link } from "@chakra-ui/react";
 const Footer = () => {
   return (
     <>
-      <footer className="border-t mt-12 border-stroke text-white bg-[#272727]">
+      <footer className="border-t mt-0 border-stroke text-white bg-[#272727]">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           {/* <!-- Footer Top --> */}
           <div className="py-20 lg:py-25">
@@ -78,7 +78,7 @@ const Footer = () => {
                   <ul>
                     <li>
                       <Link
-                        href="/Home"
+                        href="/"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Home
@@ -95,7 +95,7 @@ const Footer = () => {
 
                     <li>
                       <Link
-                        href="/Construction"
+                        href="/FAQs"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         FAQ's
