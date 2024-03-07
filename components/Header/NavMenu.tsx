@@ -53,16 +53,6 @@ export const NavMenu = () => {
           <Divider />
 
           <DrawerBody>
-            {/* {navItems.map((navItem) => (
-              <Link href={navItem.href} key={navItem.label}>
-                <Box
-                  p="0.5rem"
-                  _hover={{ bgColor: "brand.primaryLight", color: "white" }}
-                >
-                  {navItem.label}
-                </Box>
-              </Link>
-            ))} */}
             {navLinks.map((link, index) => (
               <Link key={index} href={link.href} className={classes.link}>
                 <Box

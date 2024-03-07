@@ -3,7 +3,6 @@ import "./globals.css";
 
 import Header from "components/Header";
 import Footer from "components/Footer";
-import Lines from "components/Lines";
 import NextTopLoader from "nextjs-toploader";
 
 export const metadata = {
@@ -19,7 +18,6 @@ export default function RootLayout({ children }) {
           <NextTopLoader color="#f8cf2c" />
 
           <Header />
-          {/* <Lines /> */}
           <main className="min-h-screen">{children}</main>
           <Footer />
         </Providers>

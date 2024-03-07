@@ -155,52 +155,6 @@ export default function HeaderMenu() {
           </Group>
         </Group>
       </header>
-
-      {/* opening of drawer */}
-      {/* <Drawer
-        opened={drawerOpened}
-        onClose={closeDrawer}
-        size="100%"
-        padding="md"
-        hiddenFrom="sm"
-        zIndex={1000000}
-      >
-        <Image
-          className="realtive bottom-10"
-          width={100}
-          height={100}
-          src="/logo.png"
-          alt="Logo"
-        />
-        <ScrollArea h={`calc(90vh - ${rem(80)})`} mx="-md">
-          <Divider my="sm" />
-
-          {navLinks.map((link, index) => (
-            <Link key={index} href={link.href} className={classes.link}>
-              {link.label}
-            </Link>
-          ))}
-        </ScrollArea>
-        <Divider my="sm" />
-      </Drawer> */}
-
-      {/* end of opening of drawer */}
-
-      {/* <Flex
-        alignItems="center"
-        justifyContent={"center"}
-        p={1}
-        bgColor={"#edf6f9"}
-      >
-        <Link
-          href="/Construction"
-          rel="noopener noreferrer"
-          _hover={{ textDecoration: "none" }}
-          style={{ fontWeight: "900", color: "#000" }}
-        >
-          Welcome to React
-        </Link>
-      </Flex> */}
     </Box>
   );
 }
