@@ -1,15 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Container } from "@mantine/core";
-import ServiceData from "./servicesData";
 import SingleFeature from "./SingleFeature";
 import SectionHeader from "components/Common/SectionHeader";
 import { getService } from "api/functions/get";
 
 const Services = ({ all }) => {
-  const sliceServiceData = all ? ServiceData : ServiceData.slice(0, 3);
-
   const [service, setService] = useState([]);
   const [loading, setLoading] = useState(true);
 

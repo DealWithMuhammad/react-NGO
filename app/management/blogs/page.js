@@ -12,9 +12,9 @@ export default function page() {
         <SectionHeader
           headerInfo={{
             title: "Blog Management",
-            subtitle: "Manage your blogs efficiently",
+            subtitle: "Manage your posts efficiently",
             description:
-              "Here you can manage all your blogs, including editing and deleting.",
+              "Here you can manage all your posts, including editing and deleting.",
           }}
         />
         <br />
