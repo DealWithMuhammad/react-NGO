@@ -33,7 +33,7 @@ const BlogsListing = ({ all, category }) => {
   if (loading) {
     return (
       <Flex height="20vh" align="center" justify="center">
-        <Spinner size="xl" color="default" />
+        <Spinner size="xl" color="#f8cf2c" />
       </Flex>
     );
   }

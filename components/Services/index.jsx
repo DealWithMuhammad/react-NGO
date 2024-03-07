@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import SingleFeature from "./SingleFeature";
 import SectionHeader from "components/Common/SectionHeader";
 import { getService } from "api/functions/get";
+import { Spinner } from "@nextui-org/react";
+import { Flex } from "@mantine/core";
 
 const Services = ({ all }) => {
   const [service, setService] = useState([]);
@@ -24,6 +26,13 @@ const Services = ({ all }) => {
     fetchData();
   }, []); // Fetch data on initial render only
 
+  if (loading) {
+    return (
+      <Flex height="20vh" align="center" justify="center">
+        <Spinner size="xl" color="#f8cf2c" />
+      </Flex>
+    );
+  }
   return (
     <>
       {/* <!-- ===== Features Start ===== --> */}
@@ -42,7 +51,7 @@ const Services = ({ all }) => {
           {/* <!-- Section Title End --> */}
 
           {loading ? (
-            <p>Loading...</p>
+            <Spinner size="xl" color="default" />
           ) : (
             <div className="mt-12.5 flex flex-wrap justify-center gap-7.5 xl:mt-20 xl:gap-12.5">
               {/* <!-- Features item Start --> */}

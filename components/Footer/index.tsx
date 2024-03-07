@@ -75,7 +75,7 @@ const Footer = () => {
                     Quick Links
                   </h4>
 
-                  <ul>
+                  <ul className="list-none">
                     <li>
                       <Link
                         href="/"
@@ -126,7 +126,7 @@ const Footer = () => {
                     Support
                   </h4>
 
-                  <ul>
+                  <ul className="list-none">
                     <li>
                       <Link
                         href="/Blogs"
@@ -240,7 +240,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="animate_top"
           >
-            <ul className="flex items-center gap-8">
+            <ul className="flex items-center gap-8 list-none">
               <li>
                 <Link href="#" className="hover:text-primary">
                   Privacy Policy
@@ -293,7 +293,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className="animate_top"
           >
-            <ul className="flex items-center gap-5">
+            <ul className="flex items-center gap-5  list-none">
               <li>
                 <Link href="#" aria-label="social icon">
                   <svg
