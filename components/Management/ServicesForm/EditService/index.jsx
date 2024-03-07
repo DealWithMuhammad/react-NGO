@@ -7,7 +7,7 @@ import { deleteDocument } from "api/functions/post";
 import { Flex } from "@mantine/core";
 import { getService } from "api/functions/get";
 
-export default function ServicesTable() {
+export function ServicesTable() {
   const [service, setService] = useState([]);
   const [loading, setLoading] = useState(true);
 
