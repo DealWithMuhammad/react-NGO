@@ -41,8 +41,10 @@ export function SingleCard({ item }) {
             src={item.imageUrl}
           />
         </CardBody>
-        <CardFooter className="text-small justify-between mt-2">
-          <b>{item.title}</b>
+        <CardFooter className="text-small justify-between mt-2 ">
+          <b className="transition-colors duration-300 hover:text-[#f8cf2c]">
+            {item.title}
+          </b>
         </CardFooter>
       </Card>
     </motion.div>
