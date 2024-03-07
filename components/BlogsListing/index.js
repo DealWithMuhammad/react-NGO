@@ -47,7 +47,7 @@ const BlogsListing = ({ all, category }) => {
             "Explore ReAct's impactful journey and stay updated on refugee rights advocacy and community empowerment through our News and Blogs section.",
         }}
       />
-      <div className="gap-4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="gap-4 mt-4 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {sliceBlogData.map((item, index) => (
           <SingleCard key={index} item={item} />
         ))}

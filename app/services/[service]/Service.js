@@ -65,15 +65,15 @@ const Service = () => {
             }}
           />
           <article className="mx-auto max-w-screen-md">
-            <div className="prose mx-auto my-3 text-xl text-slate-500 text-center font-semibold dark:prose-invert prose-a:text-blue-600">
+            <div className="prose mx-auto my-3 text-xl prose-a:text-blue-600">
               <div dangerouslySetInnerHTML={{ __html: service?.about }} />
             </div>
             <div className="mb-7 mt-7 flex justify-center">
               <Link
-                href="/blogs"
+                href="/Blogs"
                 className="bg-brand-secondary/20 rounded-full px-5 py-2 text-sm text-blue-600 dark:text-blue-500"
               >
-                ← View all services
+                ← View All Projects
               </Link>
             </div>
           </article>
