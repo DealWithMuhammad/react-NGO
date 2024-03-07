@@ -3,10 +3,10 @@
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Image } from "@mantine/core";
-import { Link } from "@nextui-org/react";
 import SectionHeader from "components/Common/SectionHeader";
 import { getDocById } from "api/functions/get";
 import { Feature } from "types/feature";
+import { Button, Link } from "@nextui-org/react";
 
 const Service = () => {
   const pathname = usePathname();
@@ -55,6 +55,7 @@ const Service = () => {
           <Image
             src={service?.imageUrl}
             alt={"Room"}
+            my={16}
             loading="eager"
             radius={"lg"}
             style={{
@@ -68,13 +69,19 @@ const Service = () => {
             <div className="prose mx-auto my-3 text-xl prose-a:text-blue-600">
               <div dangerouslySetInnerHTML={{ __html: service?.about }} />
             </div>
-            <div className="mb-7 mt-7 flex justify-center">
-              <Link
-                href="/Blogs"
-                className="bg-brand-secondary/20 rounded-full px-5 py-2 text-sm text-blue-600 dark:text-blue-500"
+            <div className="flex justify-center my-10">
+              <Button
+                size="md"
+                height="48px"
+                width="100%"
+                border="2px"
+                borderColor="white"
+                className="bg-[#f8cf2c] text-white"
               >
-                ← View All Projects
-              </Link>
+                <Link className="text-white" href="/services">
+                  View All Projects
+                </Link>
+              </Button>
             </div>
           </article>
         </>

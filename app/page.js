@@ -8,6 +8,7 @@ import Contribute from "components/Contribute";
 import BlogsListing from "components/BlogsListing";
 import Feature from "components/Features";
 import Services from "components/Services";
+import { Button, Link } from "@nextui-org/react";
 
 export default function Home() {
   return (
@@ -21,6 +22,20 @@ export default function Home() {
       <Services all={true} />
       <div className="my-14">
         <BlogsListing />
+        <div className="flex justify-center">
+          <Button
+            size="md"
+            height="48px"
+            width="100%"
+            border="2px"
+            borderColor="white"
+            className="bg-[#f8cf2c] text-white"
+          >
+            <Link className="text-white" href="/Blogs">
+              View All Blogs
+            </Link>
+          </Button>
+        </div>
       </div>
       <FAQ />
       <div className="my-14">

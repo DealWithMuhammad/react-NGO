@@ -86,7 +86,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
-                        href="/Projects"
+                        href="/services"
                         className="mb-3 inline-block hover:text-primary"
                       >
                         Projects

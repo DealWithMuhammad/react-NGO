@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import Container from "../container";
-import Link from "next/link";
 import SectionHeader from "../Common/SectionHeader";
+import { Button, Link } from "@nextui-org/react";
 
 export default function Body({ props, link }) {
   return (
@@ -37,13 +37,19 @@ export default function Body({ props, link }) {
           <div className="prose mx-auto my-3 dark:prose-invert prose-a:text-blue-600">
             <div dangerouslySetInnerHTML={{ __html: props?.about }} />
           </div>
-          <div className="mb-7 mt-7 flex justify-center">
-            <Link
-              href={link}
-              className="bg-brand-secondary/20 rounded-full px-5 py-2 text-sm text-blue-600 dark:text-blue-500 "
+          <div className="flex justify-center my-10">
+            <Button
+              size="md"
+              height="48px"
+              width="100%"
+              border="2px"
+              borderColor="white"
+              className="bg-[#f8cf2c] text-white"
             >
-              ← View all posts
-            </Link>
+              <Link className="text-white" href="/Blogs">
+                View All Blogs
+              </Link>
+            </Button>
           </div>
         </article>
       </Container>
