@@ -1,7 +1,7 @@
 import { Container } from "@mantine/core";
 import SectionHeader from "components/Common/SectionHeader";
-import BlogsTable from "components/Management/BlogsTable/Index";
-import ServicesTable from "components/Management/ServicesForm/EditService/Index";
+// import ServicesTable from "components/Management/ServicesForm/EditService/Index";
+import { ServicesTable } from "../../../components/Management/ServicesForm/EditService/index";
 
 // import Header from "components/Header";
 
