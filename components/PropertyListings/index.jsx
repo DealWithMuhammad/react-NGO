@@ -3,12 +3,6 @@
 import { SimpleGrid } from "@mantine/core";
 import "react-awesome-slider/dist/styles.css";
 import SectionHeader from "../Common/SectionHeader";
-import SingleListing from "./SingleListing";
-import KnowMore from "../Common/KnowMore";
-import { useEffect, useState } from "react";
-import { getBlogs } from "api/functions/get";
-import { Flex } from "@chakra-ui/react";
-import { Spinner } from "@nextui-org/react";
 import { Image } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
