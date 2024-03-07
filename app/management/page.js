@@ -25,28 +25,58 @@ export default function Page() {
                 <FaPeopleRobbery />
               </ActionIcon>
               <Text mt={2} fontWeight="bold">
-                Posts Management
+                News & Blogs Management
               </Text>
               <Text mt={1} fontSize="sm">
-                Manage your posts here.
+                Manage your Blogs here.
               </Text>
             </Link>
           </Box>
           {/* Founder Management card */}
           <Box className="min-w-[40vw] bg-green-500 rounded-md flex-1 mr-2 p-6 cursor-pointer">
-            <Link href={"/management/post"}>
+            <Link href={"/management/post/newBlog"}>
               <ActionIcon variant="light" color="dark" aria-label="Settings">
                 <FaChartSimple />
               </ActionIcon>
               <Text mt={2} fontWeight="bold">
-                Publish Post
+                Publish Blogs
               </Text>
               <Text mt={1} fontSize="sm">
-                Publish Post and blogs.
+                Publish your News & Blogs here.
               </Text>
             </Link>
           </Box>
+
           {/* Post Projects */}
+        </Flex>
+        <Flex mt={12} className="flex flex-wrap " gap={5}>
+          <Box className="min-w-[40vw] bg-yellow-500 rounded-md flex-1 mr-2 p-6 cursor-pointer">
+            <Link href={"/management/services"}>
+              <ActionIcon variant="light" color="dark" aria-label="Settings">
+                <FaPeopleRobbery />
+              </ActionIcon>
+              <Text mt={2} fontWeight="bold">
+                Projects Management
+              </Text>
+              <Text mt={1} fontSize="sm">
+                Manage your Projects here.
+              </Text>
+            </Link>
+          </Box>
+
+          <Box className="min-w-[40vw] bg-pink-500 rounded-md flex-1 mr-2 p-6 cursor-pointer">
+            <Link href={"/management/post/newProject"}>
+              <ActionIcon variant="light" color="dark" aria-label="Settings">
+                <FaChartSimple />
+              </ActionIcon>
+              <Text mt={2} fontWeight="bold">
+                Publish Project
+              </Text>
+              <Text mt={1} fontSize="sm">
+                Publish your Projects here.
+              </Text>
+            </Link>
+          </Box>
         </Flex>
       </Container>
     </>
