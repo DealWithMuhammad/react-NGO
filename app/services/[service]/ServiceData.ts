@@ -78,7 +78,7 @@ const Feature = [
     title: "ReAct General Meeting",
     href: "/services/react-general-meeting",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "ReAct's quarterly General Meetings engage members, community leaders, and NGOs to discuss and advance the advocacy for refugee rights in Malaysia.",
     imageUrl:"/about.jpg",
     details:"loremfjdnbhjebfhebfhebfhehfbehfebfhebfhebfhebfheb"
   },
@@ -98,7 +98,7 @@ const Feature = [
     title: "Goverment Engagement",
     href: "/services/goverment-engagement",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "ReAct advocates for refugee rights, engages with government officials, media outlets, and promotes policy reforms for inclusion and protection in Malaysia.",
     imageUrl: "",
     details:"ndjfnejfnejfnejfnefjnejf"
   },
@@ -119,7 +119,7 @@ const Feature = [
     title: "Comunity Engagements And Advocacy",
     href: "/services/community-engagement",
     description:
-      "Refugee Action for Change (ReAct) is an advocacy group represented and led by refugees in Malaysia.",
+      "We're eager to engage with your community, advance refugee rights, and invite CBO member-representatives to join us in making a powerful impact.",
     imageUrl: "",
     details: "As a refugee-led effort, our purpose is to unify forcibly displaced individuals and groups from different nationalities and ethnicities as one, and raise awareness to push for the recognition of refugee rights in Malaysia.",
     heading: "Community Engagements & Partnerships",
