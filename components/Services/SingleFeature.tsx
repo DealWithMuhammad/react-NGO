@@ -1,10 +1,15 @@
-import { Feature } from "../../types/feature";
+// import { Feature } from "../../types/feature";
 import { motion } from "framer-motion";
 import { Button } from "@mantine/core";
 import Link from "next/link";
+import { Feature } from "types/feature";
+import { Image } from "@nextui-org/react";
+import { useRouter } from "next/navigation";
 
 const SingleFeature = ({ feature }: { feature: Feature }) => {
-  const { icon: Icon, title, description, href } = feature;
+  const { imageUrl, title, description } = feature;
+
+  const navigate = useRouter();
 
   return (
     <>
@@ -27,18 +32,26 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
         className="animate_top z-40 rounded-lg border border-white bg-white p-7.5 lg:w-[28%]  transition-all hover:shadow-solid-4 "
       >
         <div className="relative text-white flex h-16 w-16 items-center justify-center rounded-[4px] bg-[#f8cf2c]">
-          <Icon size={36} /> {/* Render the icon component directly */}
+          <Image
+            src={feature.imageUrl}
+            alt={"Room"}
+            loading="eager"
+            radius={"lg"}
+            height={"100px"}
+            width={"100px"}
+          />{" "}
+          {/* Render the icon component directly */}
         </div>
         <h3 className="mb-5 mt-7.5 text-xl font-semibold text-black dark:text-white xl:text-itemtitle">
           {title}
         </h3>
         <p>{description}</p>
         <br />
-        <Link href={href}>
+        <div onClick={() => navigate.push(`services/${feature.id}`)}>
           <Button bg={"#f8cf2c"} c={"#000"}>
             Learn More
           </Button>
-        </Link>
+        </div>
       </motion.div>
     </>
   );

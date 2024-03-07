@@ -1,12 +1,32 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { Container } from "@mantine/core";
 import ServiceData from "./servicesData";
 import SingleFeature from "./SingleFeature";
 import SectionHeader from "components/Common/SectionHeader";
+import { getService } from "api/functions/get";
 
 const Services = ({ all }) => {
   const sliceServiceData = all ? ServiceData : ServiceData.slice(0, 3);
+
+  const [service, setService] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const fetchedServiceData = await getService();
+        setService(fetchedServiceData);
+      } catch (error) {
+        console.error("Error fetching service data:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []); // Fetch data on initial render only
 
   return (
     <>
@@ -25,14 +45,18 @@ const Services = ({ all }) => {
           />
           {/* <!-- Section Title End --> */}
 
-          <div className="mt-12.5 flex flex-wrap justify-center  gap-7.5  xl:mt-20 xl:gap-12.5">
-            {/* <!-- Features item Start --> */}
+          {loading ? (
+            <p>Loading...</p>
+          ) : (
+            <div className="mt-12.5 flex flex-wrap justify-center gap-7.5 xl:mt-20 xl:gap-12.5">
+              {/* <!-- Features item Start --> */}
 
-            {sliceServiceData.map((feature, key) => (
-              <SingleFeature feature={feature} key={key} />
-            ))}
-            {/* <!-- Features item End --> */}
-          </div>
+              {service.map((feature, key) => (
+                <SingleFeature feature={feature} key={key} />
+              ))}
+              {/* <!-- Features item End --> */}
+            </div>
+          )}
         </div>
       </section>
 

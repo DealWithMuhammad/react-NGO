@@ -12,7 +12,7 @@ const featuresData: Feature[] = [
     title: "ReAct General Meeting",
     href: "/services/react-general-meeting",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "ReAct's quarterly General Meetings engage members, community leaders, and NGOs to discuss and advance the advocacy for refugee rights in Malaysia.",
     imageUrl: "",
   },
   {
@@ -30,7 +30,7 @@ const featuresData: Feature[] = [
     title: "Goverment Engagement",
     href: "/services/goverment-engagement",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "ReAct advocates for refugee rights, engages with government officials, media outlets, and promotes policy reforms for inclusion and protection in Malaysia.",
     imageUrl: "",
   },
   {
@@ -48,7 +48,7 @@ const featuresData: Feature[] = [
     title: "Comunity Engagements And Advocacy",
     href: "/services/community-engagement",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "We're eager to engage with your community, advance refugee rights, and invite CBO member-representatives to join us in making a powerful impact.",
     imageUrl: "",
   },
 ];
