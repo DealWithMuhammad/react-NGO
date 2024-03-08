@@ -34,14 +34,6 @@ const Footer = () => {
 
                 <p className="mb-10 mt-5">Refugee Action for Change (ReAct)</p>
 
-                <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
-                  <Link
-                    href="/Services"
-                    className="mb-3 inline-block hover:text-primary"
-                  >
-                    Services
-                  </Link>
-                </p>
                 <Link
                   href="#"
                   className="font-medium text[#fff] dark:text-white text-xl"
@@ -245,8 +237,8 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-primary">
-                  Support
+                <Link href="/ContactUs" className="hover:text-primary">
+                  Contact
                 </Link>
               </li>
             </ul>
