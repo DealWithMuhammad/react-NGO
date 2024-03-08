@@ -1,24 +1,22 @@
 "use client";
 // Import necessary packages and components
-import React, { useState, ChangeEvent, useEffect } from "react";
+import React, { useState, ChangeEvent } from "react";
 import {
   Box,
   Button,
-  Card,
-  CardBody,
-  CardHeader,
   Divider,
   Flex,
   Heading,
   Input,
   InputGroup,
-  InputLeftElement,
   Stack,
   Text,
   Textarea,
   useToast,
 } from "@chakra-ui/react";
 
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 // Define the Contact component
 const Contribute: React.FC = () => {
   // State to manage form data
@@ -86,6 +84,20 @@ const Contribute: React.FC = () => {
     }));
   };
 
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_pjm5ras",
+      "template_9mca49n",
+      form.current,
+      "C172Rx3PPVX0Izb1g"
+    );
+    e.target.reset();
+  };
+
   // Render the component
   return (
     <Box mx={10}>
@@ -117,59 +129,54 @@ const Contribute: React.FC = () => {
         <Stack spacing={10} w={{ base: "100%", lg: "55%" }}>
           <Stack spacing="2rem">
             {/* ... other form fields */}
-            <Box>
-              <Input
-                border={"1px"}
-                type="text"
-                placeholder="Name"
-                name="username"
-                value={formData.username}
-                onChange={handleInputChange}
-              />
-            </Box>
-            <Box>
-              <InputGroup>
+            <form ref={form} onSubmit={sendEmail}>
+              <Box>
                 <Input
                   border={"1px"}
                   type="text"
-                  placeholder="Organization"
-                  name="organization"
-                  value={formData.phone}
-                  onChange={handleInputChange}
+                  placeholder="Name"
+                  name="name"
+                  value={formData.username}
                 />
-              </InputGroup>
-            </Box>
-            <Box>
-              <Input
-                border={"1px"}
-                type="email"
-                placeholder="E-mail"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-              />
-            </Box>
-            <Box>
-              <Textarea
-                border={"1px"}
-                placeholder="Message"
-                rows={8}
-                name="message"
-                value={formData.message}
-                onChange={handleInputChange}
-              />
-            </Box>
-            <Button
-              size="md"
-              height="48px"
-              width="100%"
-              colorScheme="yellow"
-              border="2px"
-              borderColor="white"
-              onClick={handleSubmit}
-            >
-              Submit
-            </Button>
+              </Box>
+              <Box>
+                <InputGroup>
+                  <Input
+                    border={"1px"}
+                    type="text"
+                    placeholder="Organization"
+                    name="organization"
+                  />
+                </InputGroup>
+              </Box>
+              <Box>
+                <Input
+                  border={"1px"}
+                  type="email"
+                  placeholder="E-mail"
+                  name="email"
+                />
+              </Box>
+              <Box>
+                <Textarea
+                  border={"1px"}
+                  placeholder="Message"
+                  rows={8}
+                  name="message"
+                />
+              </Box>
+              <Button
+                size="md"
+                height="48px"
+                width="100%"
+                colorScheme="yellow"
+                border="2px"
+                borderColor="white"
+                onClick={handleSubmit}
+              >
+                Submit
+              </Button>
+            </form>
           </Stack>
         </Stack>
       </Flex>
