@@ -107,7 +107,7 @@ export default function HeaderMenu() {
             style={{ color: "#000", fontSize: ".7rem" }}
             ml="0.5rem"
           >
-            +60 113986 5270
+            +60 18-310 2699
           </Link>
         </Flex>
       </Flex>

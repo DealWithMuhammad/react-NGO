@@ -107,7 +107,7 @@ const Contribute: React.FC = () => {
               <Text fontSize="xl">
                 For inquiries or assistance, please reach out to us.
               </Text>
-              <Text fontSize="xl">+60 11-3986 5270</Text>
+              <Text fontSize="xl">+60 18-310 2699</Text>
             </Box>
             <Divider mt="2rem" />
           </Box>
