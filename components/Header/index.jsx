@@ -51,6 +51,7 @@ export default function HeaderMenu() {
             target="_blank"
             rel="noopener noreferrer"
             _hover={{ textDecoration: "none" }}
+            zIndex={1}
           >
             <IconBrandFacebook size={20} color="#fff" />
           </Link>
@@ -59,6 +60,7 @@ export default function HeaderMenu() {
             target="_blank"
             rel="noopener noreferrer"
             _hover={{ textDecoration: "none" }}
+            zIndex={1}
           >
             <IconBrandInstagram
               size={25}
@@ -75,6 +77,7 @@ export default function HeaderMenu() {
               alignItems: "center",
               fontSize: ".8rem",
             }}
+            zIndex={1}
           >
             <IconBrandLinkedin
               style={{
