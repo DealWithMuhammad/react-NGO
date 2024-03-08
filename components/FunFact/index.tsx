@@ -8,7 +8,7 @@ const FunFact = () => {
     <>
       {/* <!-- ===== Funfact Start ===== --> */}
       <div className=" mb-0 mt-20 w-[100%]">
-        <div className="relative z-1  bg-[#f8cf2c] py-8 pt-8">
+        <div className="relative z-1 rounded-2xl  bg-[#f8cf2c] py-8 pt-8">
           {/* <Image
             width={335}
             height={384}
