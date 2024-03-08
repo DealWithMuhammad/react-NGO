@@ -32,9 +32,7 @@ const Footer = () => {
                   <Image width={150} height={150} src="/logo.png" alt="Logo" />
                 </Link>
 
-                <p className="mb-10 mt-5">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
+                <p className="mb-10 mt-5">Refugee Action for Change (ReAct)</p>
 
                 <p className="mb-1.5 text-sectiontitle uppercase tracking-[5px]">
                   <Link
