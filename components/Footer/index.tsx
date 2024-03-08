@@ -40,7 +40,7 @@ const Footer = () => {
                   href="#"
                   className="font-medium text[#fff] dark:text-white text-xl"
                 >
-                  reactmalaysia@gmail.com
+                  info@reactmalaysia.com
                 </Link>
               </motion.div>
 
