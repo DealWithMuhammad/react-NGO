@@ -1,6 +1,7 @@
 import { Image } from "@chakra-ui/react";
 import SectionHeader from "components/Common/SectionHeader";
-import Contact from "components/Contact";
+import Contact from "components/Contact/index";
+import ContactUs from "components/Contact/contact";
 
 export default function page() {
   return (
@@ -19,6 +20,7 @@ export default function page() {
         }}
       />
       <Contact />
+      {/* <ContactUs/> */}
       <br />
     </section>
   );

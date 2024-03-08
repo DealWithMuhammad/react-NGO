@@ -4,14 +4,23 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
 const Contact = () => {
-  const [hasMounted, setHasMounted] = React.useState(false);
-  React.useEffect(() => {
-    setHasMounted(true);
-  }, []);
-  if (!hasMounted) {
-    return null;
-  }
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_pjm5ras",
+      "template_baie8kk",
+      form.current,
+      "C172Rx3PPVX0Izb1g"
+    );
+    e.target.reset();
+  };
 
   return (
     <>
@@ -57,19 +66,20 @@ const Contact = () => {
                 Send a message
               </h2>
 
-              <form
-                action="https://formbold.com/s/unique_form_id"
-                method="POST"
-              >
+              <form ref={form} onSubmit={sendEmail}>
                 <div className="mb-7.5 flex flex-col gap-7.5 lg:flex-row lg:justify-between lg:gap-14">
                   <input
                     type="text"
                     placeholder="Full name"
+                    name="name"
+                    required
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-[#252827] focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                   />
 
                   <input
                     type="email"
+                    name="email"
+                    required
                     placeholder="Email address"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-[#252827] focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                   />
@@ -84,6 +94,7 @@ const Contact = () => {
 
                   <input
                     type="text"
+                    required
                     placeholder="Phone number"
                     className="w-full border-b border-stroke bg-transparent pb-3.5 focus:border-waterloo focus:placeholder:text-[#252827] focus-visible:outline-none dark:border-strokedark dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
                   />
@@ -100,6 +111,7 @@ const Contact = () => {
                 <div className="flex flex-wrap gap-4 xl:justify-between ">
                   <button
                     aria-label="send message"
+                    type="submit"
                     className="inline-flex items-center gap-2.5 rounded-full bg-[#f8cf2c] px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-[#8a7e4e]"
                   >
                     Send Message
@@ -145,7 +157,7 @@ const Contact = () => {
 
               <div className="5 mb-7">
                 <h3 className="mb-4 text-metatitle3 font-medium text-[#252827] dark:text-white">
-                  Our Loaction
+                  Our Location
                 </h3>
                 <p>Kuala Lumpur, Malaysia</p>
               </div>
