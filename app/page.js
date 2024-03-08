@@ -6,7 +6,6 @@ import FunFact from "components/FunFact";
 import FAQ from "components/FAQ";
 import Contribute from "components/Contribute";
 import BlogsListing from "components/BlogsListing";
-import Feature from "components/Features";
 import Services from "components/Services";
 import { Button, Link } from "@nextui-org/react";
 
