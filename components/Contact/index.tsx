@@ -169,7 +169,7 @@ const Contact = () => {
                   Email Address
                 </h3>
                 <p>
-                  <Link href="#"> info@reactmalaysia.com</Link>
+                  <Link href="email"> info@reactmalaysia.com</Link>
                 </p>
               </div>
               <div>
