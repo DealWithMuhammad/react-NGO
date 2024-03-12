@@ -1,10 +1,27 @@
+"use client";
+
 import { ActionIcon, Box, Container, Flex, Text } from "@mantine/core";
 import SectionHeader from "components/Common/SectionHeader";
 import Link from "next/link";
 import { FaPeopleRobbery } from "react-icons/fa6";
 import { FaChartSimple } from "react-icons/fa6";
 
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+
 export default function Page() {
+  const router = useRouter();
+
+  useEffect(() => {
+    // Check if the user is authenticated
+    const isAuthenticated = localStorage.getItem("isAuthenticated");
+    console.log("isAuthenticated:", isAuthenticated);
+    if (!isAuthenticated || isAuthenticated !== "true") {
+      // Redirect to sign-in page if not authenticated
+      router.push("/signin");
+    }
+  }, []);
+
   return (
     <>
       <Container size={"lg"}>

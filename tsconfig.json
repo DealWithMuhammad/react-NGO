@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/services/[service]/Service.js"  ],
+, "app/services/[service]/Service.js", "app/withAuth.jsx"  ],
   "exclude": [
     "node_modules"
   ]
