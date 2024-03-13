@@ -50,7 +50,7 @@ const Hero = () => {
         className="bg-cover flex items-center bg-center  h-[440px] lg:h-[580px] w-full text-white tracking-wider relative"
         style={{
           backgroundImage:
-            "linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/hero.jpeg')",
+            "linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/about.jpg')",
         }}
       >
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
@@ -67,7 +67,7 @@ const Hero = () => {
                 Together we rise, united we
                 <span className="text-[#f8cf2c]"> Advocate</span>
               </h1>
-              <p className="text-white">
+              <p className="text-white text-xs md:text-base">
                 We unify refugee leaders and representatives, advocating for
                 refugee rights and empowering the community through training and
                 awareness activities
@@ -76,7 +76,7 @@ const Hero = () => {
                 <Link href={"/AboutUs"}>
                   <button
                     aria-label="get started button"
-                    className="flex px-7 py-2.5 rounded-full bg-[#f8cf2c] border-[#f8cf2c] border-2 md:px-12 md:py-2.5 text-[#000] duration-300 ease-in-out hover:bg-transparent hover:text-[#f8cf2c]"
+                    className="flex px-5 py-2.5 text-sm md:text-base rounded-full bg-[#f8cf2c] border-[#f8cf2c] border-2 md:px-12 md:py-2.5 text-[#000] duration-300 ease-in-out hover:bg-transparent hover:text-[#f8cf2c]"
                   >
                     {heroContent.buttonText}
                   </button>
