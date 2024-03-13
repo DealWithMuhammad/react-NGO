@@ -8,6 +8,7 @@ import Contribute from "components/Contribute";
 import BlogsListing from "components/BlogsListing";
 import Services from "components/Services";
 import { Button, Link } from "@nextui-org/react";
+import FacebookPost from "components/Facebook";
 
 export default function Home() {
   return (
@@ -36,6 +37,7 @@ export default function Home() {
           </Button>
         </div>
       </div>
+      <FacebookPost />
       <FAQ />
       <div className="my-14">
         <Contribute />
