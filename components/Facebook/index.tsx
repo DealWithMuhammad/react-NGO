@@ -23,7 +23,6 @@ export default function FacebookPost() {
           }}
         >
           <FacebookEmbed
-            className="rounded rounded-lg"
             url="https://www.facebook.com/ReActMalaysia/posts/pfbid02kxioUYPiC61WmwTLa2YdkPPtsXNSLVCL2kGuiaC4VBqASEUnC1Cyz7yyGaEyjA9Nl"
             width={400}
           />
