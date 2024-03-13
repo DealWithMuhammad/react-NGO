@@ -22,18 +22,24 @@ export default function FacebookPost() {
             flexWrap: "wrap",
           }}
         >
-          <FacebookEmbed
-            url="https://www.facebook.com/ReActMalaysia/posts/pfbid02kxioUYPiC61WmwTLa2YdkPPtsXNSLVCL2kGuiaC4VBqASEUnC1Cyz7yyGaEyjA9Nl"
-            width={400}
-          />
-          <FacebookEmbed
-            url="https://www.facebook.com/ReActMalaysia/posts/pfbid02zpwkSzG4i3Za7do286tSw56WTMYaAjNqvqSLfRB3AkxoNevyMZfsJsBtuRM7FX73l"
-            width={400}
-          />
-          <FacebookEmbed
-            url="https://www.facebook.com/ReActMalaysia/posts/pfbid0hJxsgnrsWrA4xUJpUTY9sqPCjxYv4vHm7hLjcwwXzLDnXGRPNncByoy4ZAX2BkGBl"
-            width={400}
-          />
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FReActMalaysia%2Fposts%2Fpfbid02kxioUYPiC61WmwTLa2YdkPPtsXNSLVCL2kGuiaC4VBqASEUnC1Cyz7yyGaEyjA9Nl&show_text=true&width=500"
+            width="400"
+            height="560"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FReActMalaysia%2Fposts%2Fpfbid02zpwkSzG4i3Za7do286tSw56WTMYaAjNqvqSLfRB3AkxoNevyMZfsJsBtuRM7FX73l&show_text=true&width=500"
+            width="400"
+            height="513"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FReActMalaysia%2Fposts%2Fpfbid0hJxsgnrsWrA4xUJpUTY9sqPCjxYv4vHm7hLjcwwXzLDnXGRPNncByoy4ZAX2BkGBl&show_text=true&width=500"
+            width="400"
+            height="587"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          ></iframe>
         </div>
       </div>
     </>
