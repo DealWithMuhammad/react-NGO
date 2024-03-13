@@ -176,7 +176,7 @@ const Footer = () => {
                       <input
                         type="text"
                         placeholder="Email address"
-                        className="w-full rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-primary focus:outline-none dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
+                        className="w-full rounded-full border text-black border-stroke px-6 py-3 shadow-solid-11 focus:border-primary focus:outline-none"
                       />
 
                       <button

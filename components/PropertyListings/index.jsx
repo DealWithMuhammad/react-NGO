@@ -68,7 +68,7 @@ export default function CarouselCard({ all }) {
             </div>
             <div className="md:7/12 lg:w-6/12">
               <h2 className="text-2xl text-[#f8cf2c] font-bold md:text-4xl">
-                Uniting voices. Fighting for refugee rights
+                Uniting voices. Advocating for refugee rights
               </h2>
               <p className="mt-6 text-gray-600">
                 Refugee Action for Change (ReAct) is a refugee-led advocacy

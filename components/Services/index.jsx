@@ -43,9 +43,7 @@ const Services = ({ all }) => {
             headerInfo={{
               title: "",
               subtitle: "Projects of ReAct",
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-            ante in maximus.`,
+              description: `Explore projects of ReAct`,
             }}
           />
           {/* <!-- Section Title End --> */}
