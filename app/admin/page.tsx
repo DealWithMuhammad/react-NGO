@@ -1,9 +1,8 @@
 "use client";
-
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-
 import { AppLogo } from "../../components/AppLogo";
+import { Spinner } from "@nextui-org/react";
 
 const SignIn: React.FC = () => {
   const initForm = {
@@ -13,6 +12,7 @@ const SignIn: React.FC = () => {
 
   const [formData, setFormData] = useState(initForm);
   const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false); // New loading state
   const router = useRouter();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -23,7 +23,13 @@ const SignIn: React.FC = () => {
     }));
   };
 
-  const handleSignIn = () => {
+  const handleSignIn = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true); // Set loading state to true
+
+    // Simulate asynchronous sign-in process
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
     console.log("Email:", formData.email);
     console.log("Password:", formData.password);
 
@@ -32,15 +38,15 @@ const SignIn: React.FC = () => {
       formData.email === "reactmalayisa@gmail.com" &&
       formData.password === "11221122"
     ) {
-      // Set sign-in flag in local storage
       localStorage.setItem("isAuthenticated", "true");
       console.log("Authentication successful");
-      // Redirect to dashboard page
       router.push("/management");
     } else {
       setError("Invalid email or password");
       console.log("Authentication failed");
     }
+
+    setLoading(false); // Set loading state back to false
   };
 
   return (
@@ -63,7 +69,7 @@ const SignIn: React.FC = () => {
                 Sign In to ReAct Malaysia
               </h2>
 
-              <form>
+              <form onSubmit={handleSignIn}>
                 <div className="mb-4">
                   <label className="mb-2.5 block font-medium text-black dark:text-white">
                     Email
@@ -97,10 +103,14 @@ const SignIn: React.FC = () => {
                 <div className="mb-5">
                   <button
                     type="submit"
-                    onClick={handleSignIn}
                     className="w-full cursor-pointer rounded-lg border border-[#f8cf2c] bg-[#f8cf2c] p-4 text-white transition hover:bg-opacity-90"
+                    disabled={loading} // Disable button while loading
                   >
-                    Sign in
+                    {loading ? (
+                      <Spinner className="flex justify-center text-yellow-500" />
+                    ) : (
+                      "Sign in"
+                    )}
                   </button>
                 </div>
               </form>
