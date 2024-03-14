@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Center, Container } from "@mantine/core";
 import { Spinner } from "@nextui-org/react";
-import SectionHeader from "../../../../components/Common/SectionHeader";
+import SectionHeader from "../../../../../components/Common/SectionHeader";
 
 export default function Page() {
   const pathname = usePathname();
