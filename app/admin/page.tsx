@@ -2,18 +2,16 @@
 
 import { useState } from "react";
 import { getEmails } from "api/functions/get";
-import emailjs from "@emailjs/browser";
+import emailjs from "emailjs-com";
 
 export default function AdminPage() {
-  const [email, setEmail] = useState("");
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
+  const [formData, setFormData] = useState({
+    email: "",
+    message: "",
+  });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     const emails = await getEmails();
     console.log(emails);
   };
@@ -24,33 +22,25 @@ export default function AdminPage() {
       const emails = emailsData.map((obj) => obj.email);
       console.log(emails);
 
-      // Your EmailJS service ID and template ID
-      const serviceID = "service_pjm5ras";
-      const templateID = "template_baie8kk";
-      const userID = "C172Rx3PPVX0Izb1g";
-
-      emailjs.init(userID);
-
-      // EmailJS parameters
-      const templateParams = {
-        to_email: "", // Placeholder for the recipient's email
-        // Add any other template parameters if needed
-      };
-
       // Iterate over each email address and send email using EmailJS
-      emails.forEach((email) => {
-        templateParams.to_email = email;
-        emailjs.send(serviceID, templateID, templateParams).then(
-          (response) => {
-            console.log(`Email sent to ${email} successfully!`, response);
-            // Handle success, e.g., update a log or database record
-          },
-          (error) => {
-            console.error(`Error sending email to ${email}:`, error);
-            // Handle error, e.g., update a log or database record
-          }
-        );
-      });
+      for (const email of emails) {
+        try {
+          const templateParams = {
+            to_email: email,
+            message: formData.message, // Fixed: passing message from form data
+          };
+          console.log(templateParams);
+          await emailjs.send(
+            "service_0seon6b",
+            "template_2pvt4of",
+            templateParams,
+            "MLHM2vfEVuIMaAkil"
+          );
+        } catch (error) {
+          console.error(`Error sending email to ${email}:`, error);
+          // Handle error, e.g., update a log or database record
+        }
+      }
     } else {
       console.error("Emails data is not in the expected format.");
     }
@@ -62,9 +52,11 @@ export default function AdminPage() {
         <div className="relative">
           <input
             type="text"
-            placeholder="Email address"
-            value={email}
-            onChange={handleEmailChange}
+            placeholder="message"
+            value={formData.message}
+            onChange={
+              (e) => setFormData({ ...formData, message: e.target.value }) // Fixed: updating email field in formData
+            }
             className="w-full rounded-full border text-black border-stroke px-6 py-3 shadow-solid-11 focus:border-primary focus:outline-none"
           />
 
@@ -96,9 +88,7 @@ export default function AdminPage() {
           </button>
         </div>
       </form>
-      <button onClick={sendEmailsToAll}>
-        Send Emails tcdcdcocdcdjcnjnnjnjn
-      </button>
+      <button onClick={sendEmailsToAll}>Send Emails</button>
     </div>
   );
 }
