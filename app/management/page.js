@@ -8,6 +8,7 @@ import { FaChartSimple } from "react-icons/fa6";
 import { GoPeople, GoProject } from "react-icons/go";
 import { RiMailSendFill } from "react-icons/ri";
 import { GrProjects } from "react-icons/gr";
+import { Spinner } from "@nextui-org/react";
 
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";

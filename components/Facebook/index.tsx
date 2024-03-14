@@ -1,7 +1,7 @@
 import { height } from "@mui/system";
 import SectionHeader from "components/Common/SectionHeader";
 import React from "react";
-import { FacebookEmbed } from "react-social-media-embed";
+import { FacebookEmbed, InstagramEmbed } from "react-social-media-embed";
 
 export default function FacebookPost() {
   return (
@@ -43,6 +43,36 @@ export default function FacebookPost() {
             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
             className="rounded-2xl"
           ></iframe>
+        </div>
+        <div className="mt-10 mx-10">
+          <SectionHeader
+            headerInfo={{
+              title: "Facebook Posts",
+              subtitle: "Instagram Posts",
+              description: "Explore our Instagram latest posts",
+            }}
+          />
+          <div
+            className="my-10"
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+              flexWrap: "wrap",
+            }}
+          >
+            <InstagramEmbed
+              width={350}
+              url="https://www.instagram.com/p/Cyf2r-0PKfq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+            />
+            <InstagramEmbed
+              url="https://www.instagram.com/p/CyQPTaTx5qK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+              width={350}
+            />
+            <InstagramEmbed
+              width={350}
+              url="https://www.instagram.com/p/Cyf4zkPPJZk/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+            />
+          </div>
         </div>
       </div>
     </>
