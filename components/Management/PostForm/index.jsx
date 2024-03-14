@@ -1,9 +1,13 @@
-"use client";
-
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import { formats, modules, categoryOptions } from "./FormModules";
-import { Autocomplete, AutocompleteItem, Input } from "@nextui-org/react";
+import {
+  Autocomplete,
+  AutocompleteItem,
+  Button,
+  Input,
+  Spinner, // Import Loading component from Next UI
+} from "@nextui-org/react";
 import DropzoneButton from "./Dropzone/index";
 import "react-quill/dist/quill.snow.css";
 
@@ -16,13 +20,13 @@ const Editor = dynamic(() => import("react-quill"), {
 
 export default function PostForm({ handleSave, props }) {
   const [about, setAbout] = useState(props?.about || "");
-
   const [formData, setFormData] = useState({
     title: props?.title || "",
     subtitle: props?.subtitle || "",
     imageUrl: props?.imageUrl || null,
     category: props?.category || "BLOG", // Default category
   });
+  const [loading, setLoading] = useState(false); // State variable to track loading state
 
   const handleEditorChange = (text) => {
     setAbout(text);
@@ -35,8 +39,10 @@ export default function PostForm({ handleSave, props }) {
     });
   };
 
-  const handleSaveContent = () => {
-    handleSave(props?.id, { ...formData, about: about });
+  const handleSaveContent = async () => {
+    setLoading(true); // Set loading to true when saving content
+    await handleSave(props?.id, { ...formData, about: about });
+    setLoading(false); // Set loading back to false when content is saved
     // Show toast notification when content is saved
     toast.success("Content saved successfully!");
   };
@@ -66,27 +72,21 @@ export default function PostForm({ handleSave, props }) {
         </Autocomplete>
 
         <Input
-          placeholder="Title"
-          label={"Title"}
+          placeholder="Heading"
+          label={"Heading"}
           className=" shadow-m"
           value={formData.title}
           onChange={(e) => handleChange(e, "title")}
         />
         <Input
-          placeholder="Subtitle"
-          label={"Subtitle"}
+          placeholder="Title"
+          label={"Title"}
           className=" shadow-m"
           value={formData.subtitle}
           onChange={(e) => handleChange(e, "subtitle")}
         />
-        {/* <Input
-          placeholder="Image Url"
-          label={"Image URL"}
-          className=" shadow-m"
-          value={formData.imageUrl}
-          onChange={(e) => handleChange(e, "imageUrl")}
-        /> */}
-        {typeof document !== "undefined" && ( // Check if document is defined
+
+        {typeof document !== "undefined" && (
           <Editor
             modules={modules}
             formats={formats}
@@ -96,9 +96,14 @@ export default function PostForm({ handleSave, props }) {
           />
         )}
 
-        <button className="shadow-md py-6" onClick={handleSaveContent}>
-          Save
-        </button>
+        <Button
+          className=" bg-yellow-500 shadow-md py-6"
+          onClick={handleSaveContent}
+          disabled={loading} // Disable button when loading is true
+        >
+          {loading ? <Spinner /> : "Save"}{" "}
+          {/* Display Loading component while loading */}
+        </Button>
       </div>
     </section>
   );

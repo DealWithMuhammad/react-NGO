@@ -1,9 +1,7 @@
-"use client";
-
 import React, { useState } from "react";
 import dynamic from "next/dynamic";
-import { formats, modules, categoryOptions } from "./FormModules";
-import { Autocomplete, AutocompleteItem, Input } from "@nextui-org/react";
+import { formats, modules } from "./FormModules";
+import { Button, Input, Spinner } from "@nextui-org/react";
 import DropzoneButton from "./Dropzone/index";
 import "react-quill/dist/quill.snow.css";
 
@@ -23,6 +21,8 @@ export default function ServicesForm({ handleSave, props }) {
     imageUrl: props?.imageUrl || null,
   });
 
+  const [loading, setLoading] = useState(false); // State variable to track loading state
+
   const handleEditorChange = (text) => {
     setAbout(text);
   };
@@ -34,8 +34,10 @@ export default function ServicesForm({ handleSave, props }) {
     });
   };
 
-  const handleSaveContent = () => {
-    handleSave(props?.id, { ...formData, about: about });
+  const handleSaveContent = async () => {
+    setLoading(true); // Set loading to true when saving content
+    await handleSave(props?.id, { ...formData, about: about });
+    setLoading(false); // Set loading back to false when content is saved
     // Show toast notification when content is saved
     toast.success("Content saved successfully!");
   };
@@ -47,21 +49,13 @@ export default function ServicesForm({ handleSave, props }) {
           handleImage={(blob) => setFormData({ ...formData, imageUrl: blob })}
           defaultValue={formData.imageUrl}
         />
-        {/* <Input
+        <Input
           placeholder="Title"
           label={"Title"}
           className=" shadow-m"
           value={formData.title}
           onChange={(e) => handleChange(e, "title")}
-        /> */}
-        <Input
-          placeholder="Title"
-          label={"Subtitle"}
-          className=" shadow-m"
-          value={formData.subtitle}
-          onChange={(e) => handleChange(e, "subtitle")}
         />
-
         <Input
           placeholder="Description"
           label={"Description"}
@@ -69,15 +63,7 @@ export default function ServicesForm({ handleSave, props }) {
           value={formData.description}
           onChange={(e) => handleChange(e, "description")}
         />
-
-        {/* <Input
-          placeholder="Image Url"
-          label={"Image URL"}
-          className=" shadow-m"
-          value={formData.imageUrl}
-          onChange={(e) => handleChange(e, "imageUrl")}
-        /> */}
-        {typeof document !== "undefined" && ( // Check if document is defined
+        {typeof document !== "undefined" && (
           <Editor
             modules={modules}
             formats={formats}
@@ -87,9 +73,14 @@ export default function ServicesForm({ handleSave, props }) {
           />
         )}
 
-        <button className="shadow-md py-6" onClick={handleSaveContent}>
-          Save
-        </button>
+        <Button
+          className="shadow-md bg-yellow-500 py-6"
+          onClick={handleSaveContent}
+          disabled={loading} // Disable button when loading is true
+        >
+          {loading ? <Spinner /> : "Save"}{" "}
+          {/* Display Loading component while loading */}
+        </Button>
       </div>
     </section>
   );
