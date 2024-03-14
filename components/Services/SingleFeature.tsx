@@ -47,8 +47,8 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
               src={feature.imageUrl}
             />
           </CardBody>
-          <CardFooter className="text-small justify-between mt-2 ">
-            <b className="transition-colors duration-300 hover:text-[#f8cf2c]">
+          <CardFooter className="text-small justify-center mt-2 ">
+            <b className="transition-colors text-center duration-300 hover:text-[#f8cf2c]">
               {subtitle}
             </b>
           </CardFooter>
