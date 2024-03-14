@@ -1,9 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import firebase from "firebase/app";
-import { app } from "api/FirebaseConfig";
-import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
+import { getEmails } from "api/functions/get";
+import emailjs from "@emailjs/browser";
 
 export default function AdminPage() {
   const [email, setEmail] = useState("");
@@ -15,30 +14,45 @@ export default function AdminPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
-      const db = getFirestore(app);
-      const docRef = await addDoc(collection(db, "emails"), {
-        email: email,
-      });
-      console.log("Email saved with ID: ", docRef.id);
-      // Optionally, you can reset the email state after submission
-      setEmail("");
-    } catch (error) {
-      console.error("Error adding email: ", error);
-    }
+    const emails = await getEmails();
+    console.log(emails);
   };
 
   const sendEmailsToAll = async () => {
-    try {
-      const db = getFirestore(app);
-      const querySnapshot = await getDocs(collection(db, "emails"));
-      querySnapshot.forEach(async (doc) => {
-        const email = doc.data().email;
-        // Here, you can implement your email sending logic
-        console.log("Sending email to: ", email);
+    const emailsData = await getEmails();
+    if (Array.isArray(emailsData)) {
+      const emails = emailsData.map((obj) => obj.email);
+      console.log(emails);
+
+      // Your EmailJS service ID and template ID
+      const serviceID = "service_pjm5ras";
+      const templateID = "template_baie8kk";
+      const userID = "C172Rx3PPVX0Izb1g";
+
+      emailjs.init(userID);
+
+      // EmailJS parameters
+      const templateParams = {
+        to_email: "", // Placeholder for the recipient's email
+        // Add any other template parameters if needed
+      };
+
+      // Iterate over each email address and send email using EmailJS
+      emails.forEach((email) => {
+        templateParams.to_email = email;
+        emailjs.send(serviceID, templateID, templateParams).then(
+          (response) => {
+            console.log(`Email sent to ${email} successfully!`, response);
+            // Handle success, e.g., update a log or database record
+          },
+          (error) => {
+            console.error(`Error sending email to ${email}:`, error);
+            // Handle error, e.g., update a log or database record
+          }
+        );
       });
-    } catch (error) {
-      console.error("Error sending emails: ", error);
+    } else {
+      console.error("Emails data is not in the expected format.");
     }
   };
 
@@ -82,7 +96,9 @@ export default function AdminPage() {
           </button>
         </div>
       </form>
-      <button onClick={sendEmailsToAll}>Send Emails to All</button>
+      <button onClick={sendEmailsToAll}>
+        Send Emails tcdcdcocdcdjcnjnnjnjn
+      </button>
     </div>
   );
 }
