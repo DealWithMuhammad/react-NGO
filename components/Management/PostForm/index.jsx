@@ -75,7 +75,7 @@ export default function PostForm({ handleSave, props }) {
           placeholder="Heading"
           label={"Heading"}
           className=" shadow-m"
-          value={formData.title}
+          value={formData.subtitle}
           onChange={(e) => handleChange(e, "title")}
         />
         <Input

@@ -51,9 +51,10 @@ export default function ServicesForm({ handleSave, props }) {
         />
         <Input
           placeholder="Title"
+          s
           label={"Title"}
           className=" shadow-m"
-          value={formData.title}
+          value={formData.subtitle}
           onChange={(e) => handleChange(e, "title")}
         />
         <Input
