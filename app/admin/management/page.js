@@ -25,7 +25,7 @@ export default function Page() {
       if (!isAuthenticated || isAuthenticated !== "true") {
         router.replace("/admin"); // Use replace instead of push to prevent back navigation
       } else {
-        router.replace("/management");
+        router.replace("/admin/management");
       }
     }, 2000); // Adjust the delay time as needed
 
@@ -60,7 +60,7 @@ export default function Page() {
           <Flex mt={10} className="flex flex-wrap" gap={5}>
             {/* Campaign Management card */}
             <Box className="min-w-[40vw] bg-blue-500 rounded-md flex-1 mr-2 p-6 cursor-pointer">
-              <Link href={"/management/blogs"}>
+              <Link href={"/admin/management/blogs"}>
                 <ActionIcon variant="light" color="dark" aria-label="Settings">
                   <FaPeopleRobbery />
                 </ActionIcon>
@@ -74,7 +74,7 @@ export default function Page() {
             </Box>
             {/* Founder Management card */}
             <Box className="min-w-[40vw] bg-green-500 rounded-md flex-1 mr-2 p-6 cursor-pointer">
-              <Link href={"/management/post/newBlog"}>
+              <Link href={"/admin/management/post/newBlog"}>
                 <ActionIcon variant="light" color="dark" aria-label="Settings">
                   <FaChartSimple />
                 </ActionIcon>
@@ -91,7 +91,7 @@ export default function Page() {
           </Flex>
           <Flex mt={12} className="flex flex-wrap " gap={5}>
             <Box className="min-w-[40vw] bg-yellow-500 rounded-md flex-1 mr-2 p-6 cursor-pointer">
-              <Link href={"/management/services"}>
+              <Link href={"/admin/management/services"}>
                 <ActionIcon variant="light" color="dark" aria-label="Settings">
                   <GoProject />
                 </ActionIcon>
@@ -105,7 +105,7 @@ export default function Page() {
             </Box>
 
             <Box className="min-w-[40vw] bg-pink-500 rounded-md flex-1 mr-2 p-6 cursor-pointer">
-              <Link href={"/management/post/newProject"}>
+              <Link href={"/admin/management/post/newProject"}>
                 <ActionIcon variant="light" color="dark" aria-label="Settings">
                   <GrProjects />
                 </ActionIcon>
@@ -120,7 +120,7 @@ export default function Page() {
           </Flex>
           <Flex mt={12} className="flex flex-wrap " gap={5}>
             <Box className="min-w-[40vw] bg-gray-500 rounded-md flex-1 mr-2 p-6 cursor-pointer">
-              <Link href={"/management/newsletter"}>
+              <Link href={"/admin/management/newsletter"}>
                 <ActionIcon variant="light" color="dark" aria-label="Settings">
                   <RiMailSendFill />
                 </ActionIcon>

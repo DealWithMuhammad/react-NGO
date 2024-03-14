@@ -75,7 +75,9 @@ export default function ServiceTable({ service, columns }) {
             <div className="relative flex items-center gap-2">
               <Tooltip content="Edit Project">
                 <span
-                  onClick={() => router.push(`/management/services/${id}`)}
+                  onClick={() =>
+                    router.push(`/admin/management/services/${id}`)
+                  }
                   className="text-lg text-default-400 cursor-pointer active:opacity-50"
                 >
                   <EditIcon />

@@ -40,7 +40,7 @@ const SignIn: React.FC = () => {
     ) {
       localStorage.setItem("isAuthenticated", "true");
       console.log("Authentication successful");
-      router.push("/management");
+      router.push("/admin/management");
     } else {
       setError("Invalid email or password");
       console.log("Authentication failed");

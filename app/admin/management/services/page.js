@@ -4,7 +4,8 @@ import SectionHeader from "components/Common/SectionHeader";
 // import { ServicesTable } from "../../../components/Management/ServicesForm/EditService/index";
 // import Header from "components/Header";
 
-import { ServicesTable } from "../../../components/Management/ServicesForm/EditService";
+// import { ServicesTable } from "../../../components/Management/ServicesForm/EditService";
+import { ServicesTable } from "../../../../components/Management/ServicesForm/EditService";
 export default function page() {
   return (
     <>

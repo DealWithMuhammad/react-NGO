@@ -75,7 +75,7 @@ export default function BlogsTable({ blogs, columns }) {
             <div className="relative flex items-center gap-2">
               <Tooltip content="Edit blog">
                 <span
-                  onClick={() => router.push(`/management/blogs/${id}`)}
+                  onClick={() => router.push(`/admin/management/blogs/${id}`)}
                   className="text-lg text-default-400 cursor-pointer active:opacity-50"
                 >
                   <EditIcon />
