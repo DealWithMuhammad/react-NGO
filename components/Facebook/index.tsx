@@ -6,7 +6,7 @@ import { FacebookEmbed } from "react-social-media-embed";
 export default function FacebookPost() {
   return (
     <>
-      <div>
+      <div className="bg-[#ededed]">
         <SectionHeader
           headerInfo={{
             title: "Facebook Posts",
