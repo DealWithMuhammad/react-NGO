@@ -5,6 +5,9 @@ import SectionHeader from "components/Common/SectionHeader";
 import Link from "next/link";
 import { FaPeopleRobbery } from "react-icons/fa6";
 import { FaChartSimple } from "react-icons/fa6";
+import { GoPeople, GoProject } from "react-icons/go";
+import { RiMailSendFill } from "react-icons/ri";
+import { GrProjects } from "react-icons/gr";
 
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
@@ -34,7 +37,7 @@ export default function Page() {
         />
 
         {/* Action buttons in big cards */}
-        <Flex mt={6} className="flex flex-wrap" gap={5}>
+        <Flex mt={10} className="flex flex-wrap" gap={5}>
           {/* Campaign Management card */}
           <Box className="min-w-[40vw] bg-blue-500 rounded-md flex-1 mr-2 p-6 cursor-pointer">
             <Link href={"/management/blogs"}>
@@ -70,7 +73,7 @@ export default function Page() {
           <Box className="min-w-[40vw] bg-yellow-500 rounded-md flex-1 mr-2 p-6 cursor-pointer">
             <Link href={"/management/services"}>
               <ActionIcon variant="light" color="dark" aria-label="Settings">
-                <FaPeopleRobbery />
+                <GoProject />
               </ActionIcon>
               <Text mt={2} fontWeight="bold">
                 Projects Management
@@ -84,13 +87,28 @@ export default function Page() {
           <Box className="min-w-[40vw] bg-pink-500 rounded-md flex-1 mr-2 p-6 cursor-pointer">
             <Link href={"/management/post/newProject"}>
               <ActionIcon variant="light" color="dark" aria-label="Settings">
-                <FaChartSimple />
+                <GrProjects />
               </ActionIcon>
               <Text mt={2} fontWeight="bold">
                 Publish Project
               </Text>
               <Text mt={1} fontSize="sm">
                 Publish your Projects here.
+              </Text>
+            </Link>
+          </Box>
+        </Flex>
+        <Flex mt={12} className="flex flex-wrap " gap={5}>
+          <Box className="min-w-[40vw] bg-gray-500 rounded-md flex-1 mr-2 p-6 cursor-pointer">
+            <Link href={"/management/newsletter"}>
+              <ActionIcon variant="light" color="dark" aria-label="Settings">
+                <RiMailSendFill />
+              </ActionIcon>
+              <Text mt={2} fontWeight="bold">
+                Manage Newsletter
+              </Text>
+              <Text mt={1} fontSize="sm">
+                Send mails to your subscribers.
               </Text>
             </Link>
           </Box>
