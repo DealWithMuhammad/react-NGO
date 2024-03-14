@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Link } from "@chakra-ui/react";
 import { AiFillInstagram } from "react-icons/ai";
+import Newsletter from "components/Common/Newsletter";
 
 const Footer = () => {
   return (
@@ -171,7 +172,8 @@ const Footer = () => {
                     Subscribe to receive future updates.
                   </p>
 
-                  <form action="#">
+                  <Newsletter />
+                  {/* <form action="#">
                     <div className="relative">
                       <input
                         type="text"
@@ -205,7 +207,7 @@ const Footer = () => {
                         </svg>
                       </button>
                     </div>
-                  </form>
+                  </form> */}
                 </motion.div>
               </div>
             </div>

@@ -1,38 +1,69 @@
-export default function Newsletter() {
+import { useState } from "react";
+import firebase from "firebase/app";
+import { app } from "api/FirebaseConfig";
+import { getFirestore, collection, addDoc } from "firebase/firestore";
+
+export default function YourComponent() {
+  const [email, setEmail] = useState("");
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const db = getFirestore(app);
+      const docRef = await addDoc(collection(db, "emails"), {
+        email: email,
+      });
+      console.log("Email saved with ID: ", docRef.id);
+      // Optionally, you can reset the email state after submission
+      setEmail("");
+    } catch (error) {
+      console.error("Error adding email: ", error);
+    }
+  };
+
   return (
-    <div className="m-12 md:mt-12 lg:mt-0 lg:mb-0">
-      <div className="relative z-[1] block rounded-lg bg-[hsla(0,0%,100%,0.55)] px-6 py-12 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] backdrop-blur-[25px] dark:bg-[hsla(0,0%,5%,0.55)] dark:shadow-black/20 md:px-12 lg:-mr-14">
-        {/* <h1 className="mt-0 mb-12 text-4xl font-bold tracking-tight md:text-5xl xl:text-6xl">
-                    Subscribe to receive  <br /><span className="text-danger dark:text-danger-400">future updates!</span>
-                </h1> */}
-        <div className="mb-6 flex-row md:mb-0 md:flex">
-          <div
-            className="relative mb-3 w-full md:mr-3 md:mb-0"
-            data-te-input-wrapper-init
-          >
-            <input
-              type="text"
-              className="peer block min-h-[auto] w-full rounded border-0 bg-transparent py-[0.32rem] px-3 leading-[2.15] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-              id="exampleFormControlInput2"
-              placeholder="Enter your email"
-            />
-            <label
-              for="exampleFormControlInput2"
-              className="pointer-events-none absolute top-0 left-3 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[2.15] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[1.15rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[1.15rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary"
-            >
-              Enter your email
-            </label>
-          </div>
-        </div>
+    <form onSubmit={handleSubmit}>
+      <div className="relative">
+        <input
+          type="text"
+          placeholder="Email address"
+          value={email}
+          onChange={handleEmailChange}
+          className="w-full rounded-full border text-black border-stroke px-6 py-3 shadow-solid-11 focus:border-primary focus:outline-none"
+        />
+
         <button
           type="submit"
-          className="inline-block bg-slate-950 mt-2 rounded bg-danger px-7 pt-3 pb-2.5 text-sm font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#dc4c64] transition duration-150 ease-in-out hover:bg-danger-600 hover:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.3),0_4px_18px_0_rgba(220,76,100,0.2)] focus:bg-danger-600 focus:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.3),0_4px_18px_0_rgba(220,76,100,0.2)] focus:outline-none focus:ring-0 active:bg-danger-700 active:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.3),0_4px_18px_0_rgba(220,76,100,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(220,76,100,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.2),0_4px_18px_0_rgba(220,76,100,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.2),0_4px_18px_0_rgba(220,76,100,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(220,76,100,0.2),0_4px_18px_0_rgba(220,76,100,0.1)]"
-          data-te-ripple-init
-          data-te-ripple-color="light"
+          aria-label="signup to newsletter"
+          className="absolute right-0 p-4"
         >
-          Subscribe
+          <svg
+            className="fill-[#f8cf2c] transition ease-in hover:fill-[#000] "
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clipPath="url(#clip0_48_1487)">
+              <path
+                d="M3.1175 1.17318L18.5025 9.63484C18.5678 9.67081 18.6223 9.72365 18.6602 9.78786C18.6982 9.85206 18.7182 9.92527 18.7182 9.99984C18.7182 10.0744 18.6982 10.1476 18.6602 10.2118C18.6223 10.276 18.5678 10.3289 18.5025 10.3648L3.1175 18.8265C3.05406 18.8614 2.98262 18.8792 2.91023 18.8781C2.83783 18.8769 2.76698 18.857 2.70465 18.8201C2.64232 18.7833 2.59066 18.7308 2.55478 18.6679C2.51889 18.6051 2.50001 18.5339 2.5 18.4615V1.53818C2.50001 1.46577 2.51889 1.39462 2.55478 1.33174C2.59066 1.26885 2.64232 1.2164 2.70465 1.17956C2.76698 1.14272 2.83783 1.12275 2.91023 1.12163C2.98262 1.12051 3.05406 1.13828 3.1175 1.17318ZM4.16667 10.8332V16.3473L15.7083 9.99984L4.16667 3.65234V9.16651H8.33333V10.8332H4.16667Z"
+                fill=""
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_48_1487">
+                <rect width="20" height="20" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
         </button>
       </div>
-    </div>
+    </form>
   );
 }
