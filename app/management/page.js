@@ -27,7 +27,7 @@ export default function Page() {
       } else {
         router.replace("/management");
       }
-    }, 5000); // Adjust the delay time as needed
+    }, 2000); // Adjust the delay time as needed
 
     return () => clearTimeout(timer);
   }, []);
@@ -41,6 +41,7 @@ export default function Page() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
+            color: "yellow",
           }}
         >
           <Spinner className="flex justify-center text-yellow-500" size={48} />
