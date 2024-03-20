@@ -108,7 +108,7 @@ export default function HeaderMenu() {
           />
           {/* Uncomment the following lines if you want to add a phone link */}
           <Link
-            href="info@reactmalaysia.org"
+            href="mailto:info@reactmalaysia.org"
             style={{ color: "#000", fontSize: ".79rem" }}
             ml="0.2rem"
           >
