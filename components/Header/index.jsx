@@ -23,6 +23,7 @@ import { Image } from "@chakra-ui/react";
 import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
 import navLinks from "./HeaderLinks";
 import { NavMenu } from "./NavMenu";
+import { CiMail } from "react-icons/ci";
 
 export default function HeaderMenu() {
   const nav = useRouter();
@@ -100,14 +101,18 @@ export default function HeaderMenu() {
           }}
           bg="#f8cf2c"
         >
-          <IconPhone size={22} style={{ padding: "2px" }} color="#000" />
+          <CiMail
+            size={23}
+            style={{ padding: "2px", fontWeight: "800" }}
+            color="#000"
+          />
           {/* Uncomment the following lines if you want to add a phone link */}
           <Link
-            href="tel:+60 113986 5270"
-            style={{ color: "#000", fontSize: ".7rem" }}
-            ml="0.5rem"
+            href="info@reactmalaysia.org"
+            style={{ color: "#000", fontSize: ".79rem" }}
+            ml="0.2rem"
           >
-            +60 18-310 2699
+            info@reactmalaysia.org
           </Link>
         </Flex>
       </Flex>

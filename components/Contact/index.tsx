@@ -177,10 +177,7 @@ const Contact = () => {
                   Phone Number
                 </h4>
                 <p>
-                  <Link href="https://wa.me/+60179922312">+60179922312</Link>
-                </p>
-                <p>
-                  <Link href="https://wa.me/+60183102699">+60 18-310 2699</Link>
+                  <Link href="https://wa.me/+60179922312">+60 17-992 2312</Link>
                 </p>
               </div>
             </motion.div>
