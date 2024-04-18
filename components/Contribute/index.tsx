@@ -26,7 +26,7 @@ function Contribute() {
 
     emailjs.sendForm(
       "service_gy5jcvd",
-      "template_yqwwog9",
+      "template_0bouphu",
       form.current,
       "pqMyXicXMC2Zzs9gv"
     );
