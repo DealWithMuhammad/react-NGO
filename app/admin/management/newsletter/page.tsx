@@ -35,10 +35,10 @@ export default function AdminPage() {
           };
           console.log(templateParams);
           await emailjs.send(
-            "service_1s935as",
-            "template_fp4yner",
+            "service_o9p7s8f",
+            "template_k9xlqdn",
             templateParams,
-            "Yw_Sl-LEwJcEf7Oef"
+            "EVjQHhAufF2JDBCJ8"
           );
         } catch (error) {
           console.error(`Error sending email to ${email}:`, error);
