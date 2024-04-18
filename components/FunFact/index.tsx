@@ -7,7 +7,7 @@ const FunFact = () => {
   return (
     <>
       {/* <!-- ===== Funfact Start ===== --> */}
-      <div className=" mb-0 mt-20 w-[100%]">
+      <div className="bg-gradient-to-b from-white to-[#ededed] mb-0 mt-20 w-full">
         <div className="relative z-1 rounded-2xl  bg-[#f8cf2c] py-8 pt-8">
           {/* <Image
             width={335}
