@@ -90,10 +90,10 @@ const Contribute: React.FC = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_pjm5ras",
+      "service_gy5jcvd",
       "template_9mca49n",
       form.current,
-      "C172Rx3PPVX0Izb1g"
+      "pqMyXicXMC2Zzs9gv"
     );
     e.target.reset();
   };
