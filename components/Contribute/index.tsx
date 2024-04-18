@@ -18,72 +18,7 @@ import {
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 // Define the Contact component
-const Contribute: React.FC = () => {
-  // State to manage form data
-  const [formData, setFormData] = useState({
-    username: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  // Toast for success message
-  const toast = useToast();
-
-  // Function to handle form submission
-  const handleSubmit = async () => {
-    try {
-      console.log("Submitting form with data:", formData); // Log the form data
-
-      // Use Sanity client to create a new document in the 'contact' collection
-      // await client.create({
-      //   _type: "contact",
-      //   ...formData,
-      // });
-
-      // Optionally, you can reset the form data after successful submission
-      setFormData({
-        username: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
-
-      // Display success message
-      toast({
-        title: "Message sent!",
-        description: "We'll get back to you soon.",
-        status: "success",
-        duration: 5000,
-        isClosable: true,
-      });
-
-      console.log("Form submitted successfully!");
-    } catch (error) {
-      console.error("Error submitting form:", error);
-
-      // Display error message if submission fails
-      toast({
-        title: "Error",
-        description: "Failed to submit the form. Please try again.",
-        status: "error",
-        duration: 5000,
-        isClosable: true,
-      });
-    }
-  };
-
-  // Function to handle input changes
-  const handleInputChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
-
+function Contribute() {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -91,7 +26,7 @@ const Contribute: React.FC = () => {
 
     emailjs.sendForm(
       "service_gy5jcvd",
-      "template_9mca49n",
+      "template_yqwwog9",
       form.current,
       "pqMyXicXMC2Zzs9gv"
     );
@@ -171,7 +106,8 @@ const Contribute: React.FC = () => {
                 colorScheme="yellow"
                 border="2px"
                 borderColor="white"
-                onClick={handleSubmit}
+                aria-label="send message"
+                type="submit"
               >
                 Submit
               </Button>
@@ -181,7 +117,7 @@ const Contribute: React.FC = () => {
       </Flex>
     </Box>
   );
-};
+}
 
 // Export the Contact component
 export default Contribute;
