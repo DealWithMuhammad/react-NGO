@@ -1,7 +1,7 @@
 // import { Feature } from "../../types/feature";
 import { motion } from "framer-motion";
 import { Button } from "@mantine/core";
-import Link from "next/link";
+import { Link } from "@nextui-org/react";
 import { Feature } from "types/feature";
 import { Image } from "@nextui-org/react";
 import { useRouter } from "next/navigation";
