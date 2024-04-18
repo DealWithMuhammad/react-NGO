@@ -58,7 +58,7 @@ const Footer = () => {
                 className="animate_top"
               >
                 <h4 className="mb-9 text-itemtitle2 font-medium text[#fff] dark:text-white">
-                  Navigations
+                  Navigation
                 </h4>
 
                 <ul className="list-none">
