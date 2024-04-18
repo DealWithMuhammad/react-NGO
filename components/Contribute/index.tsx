@@ -136,7 +136,6 @@ const Contribute: React.FC = () => {
                   type="text"
                   placeholder="Name"
                   name="name"
-                  value={formData.username}
                 />
               </Box>
               <Box>
