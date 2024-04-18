@@ -100,7 +100,7 @@ export default function page() {
                         <div>2. STRATEGIC INITIATIVES</div>
                         <div>3. COLLABORATIVE SUPPORT</div>
                       </div>
-                      <div className="flex flex-wrap wrap md:justify-evenly md:mt-6">
+                      <div className="flex text-left flex-wrap wrap md:justify-evenly md:mt-6">
                         <div>4. POLICY ADVOCACY</div>
                         <div>5. RIGHTS ADVOCACY</div>
                         <div>6. PUBLIC SUPPORT</div>

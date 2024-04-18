@@ -44,7 +44,7 @@ export default function FacebookPost() {
             className="rounded-2xl"
           ></iframe>
         </div>
-        <div className="mt-10 mx-10">
+        <div className="mt-10 mb-12 mx-10">
           <SectionHeader
             headerInfo={{
               title: "Facebook Posts",
