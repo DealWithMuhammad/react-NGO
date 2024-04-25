@@ -142,11 +142,6 @@ function Privacy() {
         remain on Your personal computer or mobile device when You go offline,
         while Session Cookies are deleted as soon as You close Your web browser.
       </p>
-      <p>
-        Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies
-        remain on Your personal computer or mobile device when You go offline,
-        while Session Cookies are deleted as soon as You close Your web browser.
-      </p>
     </div>
   );
 }
