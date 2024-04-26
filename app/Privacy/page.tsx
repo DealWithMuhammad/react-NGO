@@ -10,7 +10,6 @@ function Privacy() {
         Service and tells You about Your privacy rights and how the law protects
         You.
       </p>
-
       <h1 className="text-3xl font-bold">Interpretation and Definitions</h1>
       <h1 className="text-2xl mt-5 font-semibold">Interpretation</h1>
       <p className="my-10 mr-10">
@@ -137,6 +136,11 @@ function Privacy() {
           server integrity).
         </li>
       </ul>
+      <p>
+        Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies
+        remain on Your personal computer or mobile device when You go offline,
+        while Session Cookies are deleted as soon as You close Your web browser.
+      </p>{" "}
       <p>
         Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies
         remain on Your personal computer or mobile device when You go offline,
