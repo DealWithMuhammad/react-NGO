@@ -141,6 +141,7 @@ function Privacy() {
         remain on Your personal computer or mobile device when You go offline,
         while Session Cookies are deleted as soon as You close Your web browser.
       </p>
+      <p></p>
     </div>
   );
 }
