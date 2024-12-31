@@ -128,13 +128,13 @@ const Footer = () => {
                       info@reactmalaysia.com
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <p>
                       <Link href="https://wa.me/+60179922312">
                         +60 17-992 2312
                       </Link>
                     </p>
-                  </li>
+                  </li> */}
                 </ul>
               </motion.div>
 

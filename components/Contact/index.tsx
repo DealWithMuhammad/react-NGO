@@ -158,14 +158,14 @@ const Contact = () => {
                   <Link href="email"> info@reactmalaysia.com</Link>
                 </p>
               </div>
-              <div>
+              {/* <div>
                 <h4 className="mb-4 text-metatitle3 font-medium text-[#252827] dark:text-white">
                   Phone Number
                 </h4>
                 <p>
                   <Link href="https://wa.me/+60179922312">+60 17-992 2312</Link>
                 </p>
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>
